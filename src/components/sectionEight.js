@@ -1,0 +1,93 @@
+import { vuzual, winWise, paybox, libertyAssured, libertyPay, whisper, line, darkPurpleStar, purpleStar, Star } from "./assets"
+
+const SectionEight = () => {
+    return(
+        <section className="montserrat flex flex-col items-center py-[50px]
+        border-[1px] border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]
+        ">
+            <h1 className="clashDisplayBig text-[20px] xl:text-[32px]">
+            Partners and Sponsors
+            </h1>
+
+            <p className="text-[12px] xl:text-[14px] leading-[27px] pt-[20px]">
+            Getlinked Hackathon 1.0 is honored to have the following major <br className="hidden xl:block" /> companies as its partners and sponsors
+            </p>
+            <img 
+                src={darkPurpleStar}
+                className="absolute mr-[65%] mt-[160px] xl:left-[200px] xl:mt-[180px] blinking w-[15px] xl:w-[30px]"
+            />
+
+            <section className="border-[1px] border-solid border-[#D434FE] rounded-[5px] xl:px-[200px] 
+             xl:py-[130px] h-[128px] xl:h-[560px] w-[80%] flex flex-col items-center mt-[50px]">
+
+            <img 
+                src={purpleStar}
+                className="absolute w-[15px] xl:w-[30px] mt-[40px] ml-[30px] xl:mt-[80px] xl:ml-[100px] blinking"
+            />
+            <div className="flex flex-row items-center justify-center w-full h-[100%] w-[30px]">
+
+            
+
+                <div className="flex flex-col py-[20px] pr-[10px] justify-between items-center h-[100%]">
+                <img src={libertyAssured} className="w-[31px] xl:w-[120px]" />
+                <hr className="xl:w-[200px] w-[100%] h-[3px] bg-[#D434FE] border-none" />
+                <img src={whisper} className="w-[39px] xl:w-[147px]" />
+                </div>
+
+                <div className="flex flex-col mx-[10px] justify-between items-center h-[100%]  xl:mt-[15px]">
+
+                <div className="flex flex-row h-full ">
+
+                <hr className="w-[3px] h-[70%] xl:h-[80%] bg-[#D434FE] border-none mt-[10px]" />
+
+                <img src={libertyPay} className="w-[56px] xl:w-[213px] mx-[20px] xl:mt-[-30px]" />
+
+                <hr className="w-[3px] h-[70%] xl:h-[80%] bg-[#D434FE] border-none mt-[10px]" />
+
+                </div>
+                
+                <hr className="xl:w-[200px] w-[50px] h-[5px] bg-[#D434FE] border-none" />
+
+                <div className="flex flex-row h-full xl:hidden">
+                <hr className="w-[3px] h-[70%] xl:h-[80%] bg-[#D434FE] border-none mt-[10px]" />
+                <img src={paybox} className="w-[54px] xl:hidden block  xl:w-[213px] mx-[20px]" />
+                <hr className="w-[3px] h-[70%] xl:h-[80%] bg-[#D434FE] border-none mt-[10px]" />
+                </div>
+
+
+                <div className="hidden xl:flex flex-row h-full xl:pt-[30px] w-full">
+                <hr className="w-[3px] h-[80%] bg-[#D434FE] border-none" />
+                <img src={paybox} className="w-[54px] xl:w-[213px] xl:mx-[20px]" />
+                <hr className="w-[3px] h-[80%] bg-[#D434FE] border-none" />
+                </div>
+
+                </div>
+
+                <div className="flex flex-col py-[20px] pl-[10px] items-center justify-between h-[100%] mt-[-14px] xl:mt-[-54px]">
+                <img src={winWise} className="w-[34px] xl:w-[131px]" />
+                <hr className="xl:w-[200px] w-[100%] h-[3px] bg-[#D434FE] border-none xl:ml-[-20px]" />
+                <img src={vuzual} className="w-[49px] xl:w-[231px]" />
+                </div>
+
+                
+
+                <img 
+                src={Star}
+                className="absolute ml-[60%] mt-[100px] xl:right-[350px] xl:mt-[480px] blinking w-[10px] xl:w-[30px]"
+            />
+
+
+
+
+
+
+
+            </div>
+
+
+            </section>
+        </section>
+    )
+}
+
+export default SectionEight

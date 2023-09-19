@@ -1,0 +1,82 @@
+
+
+.headerBtn{
+    border-radius: 4px;
+background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%); 
+}
+
+.montserrat{
+    font-family: Montserrat;
+}
+
+.clashDisplay{
+    font-family: clashDisplay;
+}
+
+.unica{
+    font-family: unica;
+}
+
+.clashDisplayBig{
+    font-family: clashDisplayBig;
+}
+
+.blend{
+    filter: hue-rotate(0deg);
+}
+
+/* .secOneBg{
+    background: url("./assets/svgs/rightPurpleLight.svg"), lightgray -0.25px 0px / 130.652% 100% no-repeat;
+background-blend-mode: hard-light; 
+} */
+
+.globeBlend{
+    background: url("./assets/svgs/globe.svg"), lightgray -0.113px -10.671px / 105.862% 104.281% no-repeat;
+background-blend-mode: hard-light; 
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/public/fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: clashDisplay;
+    src: url("/public/fonts/OTF/ClashDisplay-Medium.otf");
+}
+
+@font-face {
+    font-family: clashDisplayBig;
+    src: url("/public//fonts/OTF/ClashDisplay-Bold.otf");
+}
+
+@font-face {
+    font-family: unica;
+    src: url("/public/fonts/Unica_One/UnicaOne-Regular.ttf");
+}
+
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .blinking {
+    animation: blink 1s infinite;
+  }
+
+  @media (min-width: 1200px) {
+    .metrixBg{
+        background-image: url("./assets/svgs/metrix.svg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: right;
+    }
+  }
