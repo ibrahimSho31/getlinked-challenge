@@ -82,7 +82,7 @@ const SectionNine = () => {
           <h1 className="pt-[30px] pb-[15px] text-[#D434FE] text-[16px] font-[700] text-left">
             Licensing Policy
           </h1>
-          <h2 className="text-[12px] xl:text-[14px] pb-[20px] text-left z-40">
+          <h2 className="text-[12px] xl:text-[14px] pb-[20px] text-left z-10">
             Here are terms of our Standard License:
           </h2>
 
