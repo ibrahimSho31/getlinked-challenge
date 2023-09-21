@@ -121,12 +121,12 @@ const SectionNine = () => {
       <section className="flex flex-col items-center justify-center xl:ml-[-100px] xl:mt-[-200px] mt-[-100px]">
         <img
           src={lock}
-          className="absolute   z-[40] xl:ml-[70px] w-[249px] xl:w-[530px]"
+          className="absolute   z-10 xl:ml-[70px] w-[249px] xl:w-[530px]"
            
         />
         <img
           src={manOnLock}
-          className="relative z-[40] pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px]"
+          className="relative z-10 pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px]"
            
         />
 
@@ -142,7 +142,7 @@ const SectionNine = () => {
         />
         <img
           src={GreyStar}
-          className="w-[10px] mt-[400px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-[40]"
+          className="w-[10px] mt-[400px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-10"
            
         />
       </section>
