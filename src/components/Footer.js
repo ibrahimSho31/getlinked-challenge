@@ -10,6 +10,7 @@ import {
   GreyStar,
   purpleStar,
 } from "./assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const links = [
@@ -63,7 +64,12 @@ const Footer = () => {
           </h1>
           {links.map((link, id) => (
             <div key={id} className="py-[10px]">
-              <p className="text-[12px] font-[400] ">{link.name}</p>
+            {
+                link.name === 'Register' ? <Link to='/register' className="text-[12px] font-[400] ">
+                Register
+                </Link> : <p className="text-[12px] font-[400] ">{link.name}</p>
+            }
+              
             </div>
           ))}
 

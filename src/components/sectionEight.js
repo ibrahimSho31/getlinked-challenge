@@ -23,7 +23,7 @@ const SectionEight = () => {
         Partners and Sponsors
       </h1>
 
-      <p className="text-[12px] z-40 xl:text-[14px] leading-[27px] pt-[20px]">
+      <p className="text-[12px] w-[286px] xl:w-[452px] z-40 xl:text-[14px] leading-[27px] pt-[20px]">
         Getlinked Hackathon 1.0 is honored to have the following major{" "}
         <br className="hidden xl:block" /> companies as its partners and
         sponsors
