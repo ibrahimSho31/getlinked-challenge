@@ -120,7 +120,7 @@ const SectionOne = () => {
             />
             <img
               src={Man}
-              className=" z-1 xl:h-[600px] xl:w-[550px] blend w-[338px]"
+              className=" z-1 xl:h-[600px] xl:w-[550px] w-[338px]"
               
               style={{
                 filter: "hue-rotate(230deg)",

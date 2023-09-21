@@ -108,32 +108,9 @@ const Register = () => {
               className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
              text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
             >
-              <section className=" flex flex-col text-[16px] font-[400]">
-                <h1 className="text-[#D434FE] clashDisplayBig text-[20px]  ml-[-60px] block xl:hidden ">
-                  Register
-                </h1>
-                <img
-                  src={purpleStar}
-                  className="w-[30px] blinking hidden xl:block mb-[50px]"
-                />
-                <img src={Sitting} className="w-[195px] xl:w-[700px] z-40" />
-              </section>
-
-              <img
-                src={StarOutline}
-                className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-              />
-
+<img src={Sitting} className="w-[195px] xl:w-[700px] z-40" />
+<img src={Walking} className="h-[30px]" />
               <section className="flex flex-col">
-                <img
-                  src={GreyStar}
-                  className="w-[15px] blinking self-end xl:mb-[50px] xl:mt-[-20px] mr-[40px] xl:mr-[0px] absolute xl:block mt-[50px]"
-                />
-
-                <img
-                  src={darkPurpleStar}
-                  className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
-                />
 
 
                 <img
