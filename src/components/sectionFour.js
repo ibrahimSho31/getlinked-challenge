@@ -8,7 +8,7 @@ import {
   GreyStar,
   Star,
 } from "./assets";
-
+import { NavLink } from "react-router-dom";
 const SectionFour = () => {
   const attributes = [
     {
@@ -108,9 +108,16 @@ const SectionFour = () => {
             </div>
           ))}
 
-          <button className="headerBtn xl:self-start w-[152px] z-40 xl:w-[172px] h-[46px] xl:h-[53px] mt-[30px]">
-            Read More
-          </button>
+          <NavLink
+                  to="/register"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "flex flex-col w-[172px] h-[53px] mt-[20px] bodyWrap text-white rounded-[8px] justify-center items-center font-[900] z-40"
+                      : " w-[172px] h-[53px] headerBtn  mt-[20px] flex flex-row items-center justify-center transition duration-300 ease-in-out rounded-[8px] z-40"
+                  }
+                >
+                  <button className=" ">Read More</button>
+                </NavLink>
 
           <img
             src={Purp2}

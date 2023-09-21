@@ -8,7 +8,7 @@ import {
   purpleStar,
   Flare2,
 } from "./assets";
-
+import { Link } from "react-router-dom";
 const SectionNine = () => {
   const policies = [
     {
@@ -102,12 +102,14 @@ const SectionNine = () => {
             </div>
           ))}
 
-          <button
-            className="headerBtn self-center w-[122px] z-40
-                    xl:w-[172px] h-[40px] xl:h-[53px] my-[30px] text-[12px]"
-          >
-            Read More
-          </button>
+
+          <Link
+                  to="/register"
+                  className="headerBtn self-center w-[122px] z-40
+                    xl:w-[172px] h-[40px] xl:h-[53px] my-[30px] text-[12px] flex flex-row items-center justify-center"
+                >
+                  <button className=" ">Read More</button>
+                </Link>
         </section>
       </section>
 
