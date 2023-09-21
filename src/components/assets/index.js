@@ -52,3 +52,23 @@ export {default as Phone} from "./svgs/phone.svg"
 export {default as Location} from "./svgs/location.svg"
 
 export {default as Hamburger} from "./svgs/hamburger.svg"
+export {default as StarOutline} from "./svgs/starOutline.svg"
+export {default as Close} from "./svgs/close.svg"
+
+export {default as Sitting} from "./svgs/register.svg"
+export {default as Walking} from "./svgs/walking.svg"
+
+export {default as Congratulations} from "./svgs/congratulation.svg"
+export {default as Flare} from "./svgs/leftFlare.svg"
+
+export {default as BtmFlare} from "./svgs/btmFlare.svg"
+
+export {default as Flare2} from "./svgs/Flare2.svg"
+export {default as Flare3} from "./svgs/Flare3.svg"
+export {default as Flare4} from "./svgs/Flare4.svg"
+
+export {default as Flare5} from "./svgs/Flare5.svg"
+export {default as FLare6} from "./svgs/Flare6.svg"
+
+export {default as Purp1} from "./svgs/purp1.svg"
+export {default as Purp2} from "./svgs/purp2.svg"

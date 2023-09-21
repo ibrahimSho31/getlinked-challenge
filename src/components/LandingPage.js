@@ -9,10 +9,25 @@ import SectionSeven from "./sectionSeven"
 import SectionEight from "./sectionEight"
 import SectionNine from "./sectionNine"
 import Footer from "./Footer"
-
+import LoadingSpinner from "./LoadingSpinner"
+import { useState, useEffect } from "react"
 const LandingPage = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      // Simulate loading delay for demonstration purposes
+      const delay = setTimeout(() => {
+        setLoading(false); 
+      }, 2000); 
+  
+      return () => clearTimeout(delay);
+    }, []);
+
     return (
         <>
+            {
+                loading ? <LoadingSpinner /> :
+            <>
             <Header />
             <SectionOne />
             <SectionTwo />
@@ -24,6 +39,10 @@ const LandingPage = () => {
             <SectionEight />
             <SectionNine />
             <Footer />
+                </>
+            }
+
+            
         </>
     )
 }
