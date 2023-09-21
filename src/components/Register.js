@@ -97,9 +97,9 @@ const Register = () => {
           <LoadingSpinner />
 
           <section className="hidden">
-            <Header />
+            
 
-            {open && <CongratsDialog open={open} setOpen={setOpen} />}
+            
             <img
               src={topPurple}
               className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
@@ -135,155 +135,6 @@ const Register = () => {
                   className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
                 />
 
-                <section className="xl:bg-[#1c152e]  z-40 pb-[50px] flex flex-col w-full rounded-[12px] xl:w-[617px] px-[20px] xl:p-[50px]">
-                  <form onSubmit={handleApplication}>
-                    <h1 className="text-[#D434FE] clashDisplayBig text-[20px] hidden xl:block">
-                      Register
-                    </h1>
-                    <h1 className="flex flex-row">
-                      <img src={Walking} className="h-[30px]" />
-                    </h1>
-                    <h1 className="uppercase text-[20px] xl:text-[24px] font-[400] pt-[10px] pb-[20px]">
-                      Create your account
-                    </h1>
-
-                    <div className="flex flex-col xl:flex-row w-full justify-between">
-                      <div className="w-full xl:w-[47%]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Team's Name
-                        </h1>
-                        <input
-                          placeholder="Enter the name of your group"
-                          className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
-                          onChange={(e) => seteamName(e.target.value)}
-                          value={teamName}
-                          required
-                        />
-                      </div>
-
-                      <div className="w-full xl:w-[47%] xl:my-[0px] my-[10px]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Phone
-                        </h1>
-                        <input
-                          placeholder="Enter your phone number"
-                          className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
-                          onChange={(e) => setPhoneNumber(e.target.value)}
-                          value={phoneNumber}
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col xl:flex-row w-full justify-between xl:my-[30px]">
-                      <div className="w-full xl:w-[47%]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Email
-                        </h1>
-                        <input
-                          placeholder="Enter your email address"
-                          className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
-                          onChange={(e) => setEmail(e.target.value)}
-                          value={email}
-                          required
-                          type="email"
-                        />
-                      </div>
-
-                      <div className="w-full xl:w-[47%] xl:my-[0px] my-[10px]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Project Topic
-                        </h1>
-                        <input
-                          placeholder="What is your group project topic"
-                          className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
-                          onChange={(e) => setProjectTopic(e.target.value)}
-                          value={projectTopic}
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div className="flex flex-row w-full justify-between">
-                      <div className="w-[67%] xl:w-[47%]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Category
-                        </h1>
-                        <select className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]">
-                          <option>Select your category</option>
-                          {results.map((result, id) => (
-                            <option
-                              onClick={() => {
-                                setCategory(result.id);
-                              }}
-                              key={id}
-                            >
-                              {result.name}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div className="w-[30%] xl:w-[47%]">
-                        <h1 className="text-[13px] xl:text-[14px] pb-[3px]">
-                          Group Size
-                        </h1>
-                        <select
-                          className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
-                          onChange={handleCategoryChange}
-                          value={groupSize}
-                        >
-                          <option value="">Select</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                          <option value="7">7</option>
-                          <option value="8">8</option>
-                          <option value="9">9</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <p className="italic text-[9px] xl:text-[12px] text-[#FF26B9] font-[400] py-[15px]">
-                      Please review your registration details before submitting
-                    </p>
-
-                    <div className="flex flex-row items-center pb-[15px]">
-                      <input
-                        type="checkbox"
-                        checked={checked}
-                        onChange={(e) => {
-                          setChecked(e.target.checked);
-                        }}
-                        className="mr-[10px]"
-                        required
-                      />
-                      <p className="text-[10px] xl:text-[12px]">
-                        I agreed with the event terms and conditions and privacy
-                        policy
-                      </p>
-                    </div>
-
-                    {errorMessage !== "" && (
-                      <p className="text-[12px] text-[red] pb-[20px] ">
-                        {errorMessage}
-                      </p>
-                    )}
-
-                    <div className="flex flex-row items-center justify-center ">
-                      <button
-                        className="headerBtn w-[179px] xl:w-full h-[53px]"
-                        type="submit"
-                      >
-                        <h1 className="xl:block hidden">Register Now</h1>{" "}
-                        <h1 className="xl:hidden block">Submit</h1>
-                      </button>
-                    </div>
-                  </form>
-                </section>
 
                 <img
                   src={Star}

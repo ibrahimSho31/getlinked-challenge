@@ -18,7 +18,7 @@ const LandingPage = () => {
       // Simulate loading delay for demonstration purposes
       const delay = setTimeout(() => {
         setLoading(false); 
-      }, 4000); 
+      }, 3000); 
   
       return () => clearTimeout(delay);
     }, []);
@@ -34,14 +34,6 @@ const LandingPage = () => {
                 <Header />
             <SectionOne />
             <SectionTwo />
-            <SectionThree />
-            <SectionFour />
-            <SectionFive />
-            <SectionSix />
-            <SectionSeven />
-            <SectionEight />
-            <SectionNine />
-            <Footer />
                 </section>
 
                 </>

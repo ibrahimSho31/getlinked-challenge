@@ -76,7 +76,7 @@ const Contact = () => {
         <>
           <LoadingSpinner />
           <section className="hidden">
-            <Header />
+            
 
             <img
               src={topPurple}
@@ -110,19 +110,8 @@ const Contact = () => {
                     Share on
                   </h1>
 
-                  <div className="flex flex-row items-center  w-full">
-                    <img src={Instagram} className="w-[24px] mr-[20px]" />
-                    <img src={x} className="w-[19px] mr-[20px]" />
-                    <img src={Facebook} className="w-[10px] mr-[20px]" />
-                    <img src={LinkedIn} className="w-[24px]" />
-                  </div>
                 </div>
               </section>
-
-              <img
-                src={StarOutline}
-                className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-              />
 
               <section className="flex flex-col">
                 <img
@@ -201,18 +190,7 @@ const Contact = () => {
                     </div>
                   </form>
 
-                  <div className="py-[15px] xl:hidden flex flex-col items-center justify-center w-full">
-                    <h1 className="text-[#D434FE] text-[16px] font-[400] pb-[10px]">
-                      Share on
-                    </h1>
 
-                    <div className="flex flex-row items-center justify-center w-full">
-                      <img src={Instagram} className="w-[24px] mr-[20px]" />
-                      <img src={x} className="w-[19px] mr-[20px]" />
-                      <img src={Facebook} className="w-[10px] mr-[20px]" />
-                      <img src={LinkedIn} className="w-[24px]" />
-                    </div>
-                  </div>
                 </section>
 
                 <img
