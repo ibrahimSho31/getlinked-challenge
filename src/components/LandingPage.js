@@ -18,7 +18,7 @@ const LandingPage = () => {
       // Simulate loading delay for demonstration purposes
       const delay = setTimeout(() => {
         setLoading(false); 
-      }, 2000); 
+      }, 4000); 
   
       return () => clearTimeout(delay);
     }, []);
