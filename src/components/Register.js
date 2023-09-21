@@ -112,8 +112,8 @@ const Register = () => {
          
       />
       <section
-        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 h-[90vh]
-             text-left xl:px-[150px] px-[20px] xl:justify-between h-[100vh] xl:pt-[30px] pb-[50px]"
+        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
+             text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
       >
         <section className=" flex flex-col text-[16px] font-[400]">
           <h1 className="text-[#D434FE] clashDisplayBig text-[20px]  ml-[-60px] block xl:hidden ">
@@ -304,18 +304,18 @@ const Register = () => {
       </section>
                 </>
                 :
-                <>
+                <section className="h-[100vh]">
       <Header />
 
-      {open && <CongratsDialog open={open} setOpen={setOpen} />}
+      {/* {open && <CongratsDialog open={open} setOpen={setOpen} />} */}
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
          
       />
       <section
-        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 h-[90vh]
-             text-left xl:px-[150px] px-[20px] xl:justify-between h-[100vh] xl:pt-[30px] pb-[50px]"
+        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
+             text-left xl:px-[150px] px-[20px] xl:justify-between h-[100%] xl:pt-[30px] pb-[50px]"
       >
         <section className=" flex flex-col text-[16px] font-[400]">
           <h1 className="text-[#D434FE] clashDisplayBig text-[20px]  ml-[-60px] block xl:hidden ">
@@ -348,7 +348,8 @@ const Register = () => {
 
           <img
             src={darkPurpleStar}
-            className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
+            className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute 
+            xl:mt-[500px] xl:ml-[-50px] ml-[200px]"
              
           />
 
@@ -493,7 +494,7 @@ const Register = () => {
 
           <img
             src={Star}
-            className="w-[15px] mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
+            className="w-[15px] hidden xl:block xl:mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
              
           />
           <img
@@ -503,7 +504,7 @@ const Register = () => {
           />
         </section>
       </section>
-      </>
+      </section>
                 }
     </>
   );

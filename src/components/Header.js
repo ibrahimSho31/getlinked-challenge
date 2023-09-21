@@ -100,8 +100,8 @@ const Header = () => {
                   to="/contactus"
                   className={({ isActive }) =>
                     isActive
-                      ? "flex flex-col activeHeaderBtn  justify-center items-center font-[900] "
-                      : "  h-[40px] flex flex-row items-center justify-center transition duration-300 ease-in-out"
+                      ? "mt-[-20px] flex flex-col activeHeaderBtn  justify-center items-center font-[900] "
+                      : "mt-[-20px] flex flex-row items-center justify-center transition duration-300 ease-in-out"
                   }
                 >
                   <p>Contact</p>

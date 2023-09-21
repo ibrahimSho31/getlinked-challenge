@@ -9,7 +9,7 @@ import NoFound from "./components/NoFound";
 
 function App() {
   return (
-    <div className="App bg-[#140d27] text-[#FFF] overflow-x-hidden">
+    <div className="App bg-[#140d27] no-scrollbar text-[#FFF] overflow-x-hidden">
     <BrowserRouter>
 
 <Routes>
