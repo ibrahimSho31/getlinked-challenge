@@ -58,7 +58,7 @@ const Contact = () => {
             
         },
         onSuccess: (success) => {
-          
+          setErrorMessage('')
         },
       }
     );

@@ -89,6 +89,7 @@ const Register = () => {
       },
         onSuccess: (success) => {
           setOpen(true);
+          setErrorMessage('')
         },
       }
     );
