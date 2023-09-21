@@ -13,7 +13,9 @@ import styles from "./Landing.css";
 
 const SectionSeven = () => {
   return (
-    <section className="flex flex-col xl:flex-row montserrat overflow-x-hidden items-center justify-between border-[1px]  xl:px-[100px] pt-[70px] xl:pt-[100px]  border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]">
+    <section className="flex flex-col xl:flex-row montserrat overflow-x-hidden items-center justify-between
+    xl:px-[100px] pt-[70px] xl:pt-[100px] bg-[#130b23]
+    border-x-[0px] border-t-[0px]">
       <section className="flex flex-col items-center xl:mt-[-150px]">
         <div className="xl:text-left text-center xl:hidden flex flex-col ">
           <img

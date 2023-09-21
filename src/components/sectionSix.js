@@ -42,7 +42,7 @@ const SectionSix = () => {
   ];
   return (
     <>
-      <section className="pb-[50px] pt-[50px] flex flex-col items-center justify-center border-[1px] border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]">
+      <section className="pb-[50px] pt-[50px] flex flex-col items-center justify-center">
         <h1 className="clashDisplayBig text-[20px] xl:text-[32px]">Timeline</h1>
 
         <p className="montserrat w-[290px] xl:w-[100%] text-[13px] xl:text-[14px] ">
@@ -60,7 +60,7 @@ const SectionSix = () => {
             {timelines.map((timeline, id) => (
               <div
                 key={id}
-                className="w-full flex flex-col items-center justify-between pb-[30px]"
+                className="w-full flex flex-col items-center justify-between pb-[20px] xl:pb-[0px]"
               >
                 <section className=" flex flex-col xl:flex-row xl:items-end items-start w-full montserrat">
                   {/* Conditional rendering of timeline.header and timeline.body */}
@@ -90,8 +90,8 @@ const SectionSix = () => {
                         src={line}
                         className={`flex w-[4px] ${
                           timeline.id === 1
-                            ? "h-[80px] xl:h-[100px]"
-                            : "h-[80px] xl:h-[70px]"
+                            ? "h-[80px] xl:h-[100px] xl:mb-[-10px]"
+                            : "h-[80px] xl:h-[70px] xl:my-[-10px]"
                         } flex-col items-center justify-center rounded-[4px]`}
                          
                       />
