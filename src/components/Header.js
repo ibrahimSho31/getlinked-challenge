@@ -70,13 +70,14 @@ const Header = () => {
         </button>
 
         <motion.ul
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+  initial={{ opacity: 0, left: "-1600px" }}
+  animate={{
+    opacity: showSecondNav ? 1 : 0,
+    left: showSecondNav ? "0px" : "-1600px",
+  }}
+          transition={{ duration: 0.3, delay: 0.1 }}
           className={`absolute top-0 text-center xl:hidden z-50 flex h-[100vh] w-full flex-col items-start justify-start 
-          leading-[80px] bg-[#150E28]  transition-[0.3s] ${
-            showSecondNav ? "left-[0px]" : "left-[-5100px]"
-          }`}
+          leading-[80px] bg-[#150E28]  transition-[0.2s] `}
         >
           <section className="fixed bg-[#150E28] px-[12px]  py-[12px] z-50 h-[100vh] w-full">
             <button
