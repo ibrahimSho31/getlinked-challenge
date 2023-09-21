@@ -62,8 +62,6 @@ const Register = () => {
     setGroupSize(selectedCategory);
   };
 
-  console.log(category);
-
   const [open, setOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 

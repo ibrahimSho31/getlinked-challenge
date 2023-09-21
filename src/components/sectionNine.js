@@ -25,7 +25,7 @@ const SectionNine = () => {
 
   return (
     <section
-      className="border-[1px] border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]
+      className="
         px-[30px] flex flex-col xl:flex-row items-center xl:items-start justify-between montserrat xl:px-[130px] py-[50px]
         "
     >
@@ -137,12 +137,17 @@ const SectionNine = () => {
         />
         <img
           src={Star}
-          className="w-[15px] xl:ml-[-350px] mt-[-150px] ml-[40%] absolute xl:mt-[750px] blinking"
+          className="w-[10px] xl:ml-[-350px] mt-[-130px] ml-[150px] absolute xl:mt-[750px] blinking"
+           
+        />
+                <img
+          src={Star}
+          className="w-[10px] block xl:hidden mt-[400px] ml-[-180px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-10"
            
         />
         <img
           src={GreyStar}
-          className="w-[10px] mt-[400px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-10"
+          className="w-[10px] mt-[430px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-10"
            
         />
       </section>

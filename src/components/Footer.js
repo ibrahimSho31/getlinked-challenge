@@ -112,7 +112,7 @@ const Footer = () => {
 
         <img
           src={Star}
-          className="w-[10px] xl:w-[20px] self-end blinking"
+          className="w-[10px]  xl:w-[20px] self-end blinking"
            
         />
       </section>
