@@ -78,7 +78,7 @@ const Contact = () => {
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg] z-20"
-        loading="lazy"
+         
       />
       <section
         className="montserrat flex flex-col xl:flex-row items-center xl:items-start
@@ -88,7 +88,7 @@ const Contact = () => {
           <img
             src={purpleStar}
             className="w-[30px] blinking hidden xl:block mb-[50px]"
-            loading="lazy"
+             
           />
           <h1 className="text-[#D434FE] clashDisplayBig text-[32px]">
             Get in touch
@@ -111,15 +111,15 @@ const Contact = () => {
               <img
                 src={Instagram}
                 className="w-[24px] mr-[20px]"
-                loading="lazy"
+                 
               />
-              <img src={x} className="w-[19px] mr-[20px]" loading="lazy" />
+              <img src={x} className="w-[19px] mr-[20px]"   />
               <img
                 src={Facebook}
                 className="w-[10px] mr-[20px]"
-                loading="lazy"
+                 
               />
-              <img src={LinkedIn} className="w-[24px]" loading="lazy" />
+              <img src={LinkedIn} className="w-[24px]"   />
             </div>
           </div>
         </section>
@@ -127,20 +127,20 @@ const Contact = () => {
         <img
           src={StarOutline}
           className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-          loading="lazy"
+           
         />
 
         <section className="flex flex-col">
           <img
             src={GreyStar}
             className="w-[15px] blinking self-end xl:mb-[50px] xl:mt-[-20px] mr-[40px] xl:mr-[0px] absolute xl:block mt-[50px]"
-            loading="lazy"
+             
           />
 
           <img
             src={darkPurpleStar}
             className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking xl:absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
-            loading="lazy"
+             
           />
 
           <section className="xl:bg-[#1c152e] z-40 flex flex-col w-full rounded-[12px] xl:w-[617px] px-[50px] xl:p-[50px]">
@@ -190,7 +190,7 @@ const Contact = () => {
                 <img
                   src={darkPurpleStar}
                   className="w-[15px] absolute ml-[-300px] blinking xl:hidden"
-                  loading="lazy"
+                   
                 />
 
 
@@ -209,15 +209,15 @@ const Contact = () => {
                 <img
                   src={Instagram}
                   className="w-[24px] mr-[20px]"
-                  loading="lazy"
+                   
                 />
-                <img src={x} className="w-[19px] mr-[20px]" loading="lazy" />
+                <img src={x} className="w-[19px] mr-[20px]"   />
                 <img
                   src={Facebook}
                   className="w-[10px] mr-[20px]"
-                  loading="lazy"
+                   
                 />
-                <img src={LinkedIn} className="w-[24px]" loading="lazy" />
+                <img src={LinkedIn} className="w-[24px]"   />
               </div>
             </div>
           </section>
@@ -225,12 +225,12 @@ const Contact = () => {
           <img
             src={Star}
             className="w-[15px] mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
-            loading="lazy"
+             
           />
           <img
             src={BtmFlare}
             className="absolute bottom-0 right-0 hidden xl:block xl:w-[600px]"
-            loading="lazy"
+             
           />
         </section>
       </section>
@@ -243,7 +243,7 @@ const Contact = () => {
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg] z-20"
-        loading="lazy"
+         
       />
       <section
         className="montserrat flex flex-col xl:flex-row items-center xl:items-start
@@ -253,7 +253,7 @@ const Contact = () => {
           <img
             src={purpleStar}
             className="w-[30px] blinking hidden xl:block mb-[50px]"
-            loading="lazy"
+             
           />
           <h1 className="text-[#D434FE] clashDisplayBig text-[32px]">
             Get in touch
@@ -276,15 +276,15 @@ const Contact = () => {
               <img
                 src={Instagram}
                 className="w-[24px] mr-[20px]"
-                loading="lazy"
+                 
               />
-              <img src={x} className="w-[19px] mr-[20px]" loading="lazy" />
+              <img src={x} className="w-[19px] mr-[20px]"   />
               <img
                 src={Facebook}
                 className="w-[10px] mr-[20px]"
-                loading="lazy"
+                 
               />
-              <img src={LinkedIn} className="w-[24px]" loading="lazy" />
+              <img src={LinkedIn} className="w-[24px]"   />
             </div>
           </div>
         </section>
@@ -292,20 +292,20 @@ const Contact = () => {
         <img
           src={StarOutline}
           className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-          loading="lazy"
+           
         />
 
         <section className="flex flex-col">
           <img
             src={GreyStar}
             className="w-[15px] blinking self-end xl:mb-[50px] xl:mt-[-20px] mr-[40px] xl:mr-[0px] absolute xl:block mt-[50px]"
-            loading="lazy"
+             
           />
 
           <img
             src={darkPurpleStar}
             className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking xl:absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
-            loading="lazy"
+             
           />
 
           <section className="xl:bg-[#1c152e] z-40 flex flex-col w-full rounded-[12px] xl:w-[617px] px-[50px] xl:p-[50px]">
@@ -355,7 +355,7 @@ const Contact = () => {
                 <img
                   src={darkPurpleStar}
                   className="w-[15px] absolute ml-[-300px] blinking xl:hidden"
-                  loading="lazy"
+                   
                 />
 
 
@@ -374,15 +374,15 @@ const Contact = () => {
                 <img
                   src={Instagram}
                   className="w-[24px] mr-[20px]"
-                  loading="lazy"
+                   
                 />
-                <img src={x} className="w-[19px] mr-[20px]" loading="lazy" />
+                <img src={x} className="w-[19px] mr-[20px]"   />
                 <img
                   src={Facebook}
                   className="w-[10px] mr-[20px]"
-                  loading="lazy"
+                   
                 />
-                <img src={LinkedIn} className="w-[24px]" loading="lazy" />
+                <img src={LinkedIn} className="w-[24px]"   />
               </div>
             </div>
           </section>
@@ -390,12 +390,12 @@ const Contact = () => {
           <img
             src={Star}
             className="w-[15px] mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
-            loading="lazy"
+             
           />
           <img
             src={BtmFlare}
             className="absolute bottom-0 right-0 hidden xl:block xl:w-[600px]"
-            loading="lazy"
+             
           />
         </section>
       </section>

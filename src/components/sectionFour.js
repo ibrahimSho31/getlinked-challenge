@@ -46,7 +46,7 @@ const SectionFour = () => {
   return (
     <>
       <section
-        className="flex flex-col xl:flex-row items-center xl:items-end z-[50] 
+        className="flex flex-col xl:flex-row items-center xl:items-end z-[40] 
       justify-between xl:px-[100px] pt-[10px] xl:pt-[50px] xl:pb-[180px] pb-[50px] 
   px-[20px] text-center xl:text-left border-[1px] 
   border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]"
@@ -55,33 +55,33 @@ const SectionFour = () => {
           <img
             src={darkPurpleStar}
             className="flex self-center w-[15px] xl:w-[30px] mb-[30px] xl:ml-[-350px] xl:mb-[100px] xl:mr-[30px] blinking"
-            loading="lazy"
+             
           />
           <img
             src={elipse}
             className="absolute mt-[-400px] ml-[-400px] z-[10] hidden xl:flex"
-            loading="lazy"
+             
           />
           <img
             src={GreyStar}
             className="hidden xl:flex self-end blinking absolute mr-[300px]"
-            loading="lazy"
+             
           />
           <img
             src={people}
             className="self-center min-w-[264px] w-full z-40"
-            loading="lazy"
+             
           />
 
           <img
             src={Purp1}
             className="absolute left-0 xl:mt-[600px] mt-[150px] w-[250px] xl:w-[700px] z-10"
-            loading="lazy"
+             
           />
           <img
             src={Star}
             className="hidden xl:flex self-end blinking mr-[30px]"
-            loading="lazy"
+             
           />
         </div>
 
@@ -115,7 +115,7 @@ const SectionFour = () => {
           <img
             src={Purp2}
             className="absolute right-0 z-10 mt-[600px] xl:mt-[400px] w-[250px] xl:w-[500px]"
-            loading="lazy"
+             
           />
         </div>
       </section>

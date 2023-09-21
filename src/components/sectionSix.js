@@ -55,7 +55,7 @@ const SectionSix = () => {
             <img
               src={darkPurpleStar}
               className="self-start blinking ml-[30px] mb-[20px] xl:w-[30px] w-[14px]"
-              loading="lazy"
+               
             />
             {timelines.map((timeline, id) => (
               <div
@@ -93,7 +93,7 @@ const SectionSix = () => {
                             ? "h-[80px] xl:h-[100px]"
                             : "h-[80px] xl:h-[70px]"
                         } flex-col items-center justify-center rounded-[4px]`}
-                        loading="lazy"
+                         
                       />
                       <div className="bg-gradient-to-br from-[#903AFF] to-[#D434FE]  w-[20px] h-[20px] xl:w-14  xl:h-14 my-[20px] rounded-full flex items-center justify-center">
                         <span className="text-white text-[12px] xl:text-xl font-bold">
@@ -132,13 +132,13 @@ const SectionSix = () => {
             <img
               src={Star}
               className="absolute xl:right-[300px] xl:w-[30px] w-[10px] right-[100px] xl:mt-[-120px] mt-[-60px] blinking"
-              loading="lazy"
+               
             />
 
             <img
               src={GreyStar}
               className="self-start blinking w-[10px]"
-              loading="lazy"
+               
             />
           </div>
         </section>

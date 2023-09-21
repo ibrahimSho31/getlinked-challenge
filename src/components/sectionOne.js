@@ -21,7 +21,7 @@ const SectionOne = () => {
         <img
           src={topPurple}
           className="w-[900px] absolute top-0 z-1"
-          loading="lazy"
+           
         />
 
         <section className="flex flex-col xl:flex-row items-center justify-between z-[10]">
@@ -29,7 +29,7 @@ const SectionOne = () => {
             src={Star}
             alt="star"
             className="xl:flex hidden relative mt-[50px] blinking pl-[100px]"
-            loading="lazy"
+             
           />
 
           <h1
@@ -40,19 +40,19 @@ const SectionOne = () => {
             <img
               src={purpleLine}
               className="flex flex-row self-end justify-end xl:w-[253px] w-[115px] "
-              loading="lazy"
+               
             />
           </h1>
           <img
             src={Star}
             className="w-[10px] block xl:hidden xl:w-[30px] ml-[-140px] mt-[70px] xl:mt-[100px]  xl:ml-[650px] blinking absolute"
-            loading="lazy"
+             
           />
 
           <img
             src={GreyStar}
             className="w-[10px] xl:w-[30px] ml-[250px] mt-[70px] xl:mt-[100px]  xl:ml-[650px] blinking absolute"
-            loading="lazy"
+             
           />
         </section>
 
@@ -61,7 +61,7 @@ const SectionOne = () => {
             <img
               src={Creative}
               className="absolute w-[18px] xl:w-[53px] xl:mt-[-50px] xl:ml-[450px] ml-[180px] mt-[-20px]"
-              loading="lazy"
+               
             />
             <h1 className="clashDisplayBig text-[32px] xl:text-[70px]  flex flex-row xl:mb-[-30px]">
               getlinked Tech
@@ -72,9 +72,9 @@ const SectionOne = () => {
                 src={Chain}
                 alt="chain"
                 className="w-[32px] "
-                loading="lazy"
+                 
               />{" "}
-              <img src={Fire} alt="fire" className="w-[32px] " loading="lazy" />
+              <img src={Fire} alt="fire" className="w-[32px] "   />
             </h1>
 
             <p className="montserrat text-[13px] xl:text-[20px] w-[264px] xl:w-[522px]">
@@ -96,13 +96,13 @@ const SectionOne = () => {
             <img
               src={GreyStar}
               className="w-[15px] block xl:hidden absolute mt-[180px] ml-[200px] xl:ml-[450px] blinking"
-              loading="lazy"
+               
             />
 
             <img
               src={GreyStar}
               className="xl:flex hidden mt-[30px] ml-[450px] blinking"
-              loading="lazy"
+               
             />
 
             <h1 className="text-[48px] mt-[20px] xl:mt-[-40px] xl:text-[64px] unica flex flex-row items-center">
@@ -116,12 +116,12 @@ const SectionOne = () => {
             <img
               src={Globe}
               className="absolute z-10 xl:h-[600px] xl:w-[550px] blend w-[338px]"
-              loading="lazy"
+              
             />
             <img
               src={Man}
               className=" z-1 xl:h-[600px] xl:w-[550px] blend w-[338px]"
-              loading="lazy"
+              
               style={{
                 filter: "hue-rotate(230deg)",
               }}

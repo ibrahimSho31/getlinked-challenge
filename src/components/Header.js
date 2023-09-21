@@ -21,7 +21,7 @@ const Header = () => {
             <img
               src={Logo}
               alt="Logo"
-              loading="lazy"
+               
               className="w-[100px] z-[45]"
             />
           </NavLink>
@@ -66,7 +66,7 @@ const Header = () => {
         </div>
 
         <button onClick={switcher} className="z-50 xl:hidden flex">
-          <img src={Hamburger} onClick={switcher} loading="lazy" />
+          <img src={Hamburger} onClick={switcher}   />
         </button>
 
         <motion.ul
@@ -74,16 +74,16 @@ const Header = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className={`absolute top-0 text-center xl:hidden z-50 flex h-[100vh] w-full flex-col items-start justify-start 
-          leading-[80px] bg-[#150E28] px-[12px] py-[12px] transition-[0.3s] ${
+          leading-[80px] bg-[#150E28]  transition-[0.3s] ${
             showSecondNav ? "left-[0px]" : "left-[-5100px]"
           }`}
         >
-          <section className="fixed h-[100vh] w-full">
+          <section className="fixed bg-[#150E28] px-[12px]  py-[12px] z-50 h-[100vh] w-full">
             <button
               className="flex flex-row items-end justify-end w-full mt-[30px] pr-[50px]"
               onClick={switcher}
             >
-              <img src={Close} className="w-[15px]" loading="lazy" />
+              <img src={Close} className="w-[15px]"   />
             </button>
             <div className="flex flex-col items-start text-left pl-[30px] w-full">
               <div className="flex flex-col items-start ">

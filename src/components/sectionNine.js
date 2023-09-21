@@ -33,13 +33,13 @@ const SectionNine = () => {
         <img
           src={GreyStar}
           className="w-[15px] mt-[-20px] ml-[70%] xl:w-[30px] absolute xl:ml-[330px] blinking"
-          loading="lazy"
+           
         />
 
         <img
           src={Flare2}
           className="absolute w-[500px] left-0 mt-[550px] z-10"
-          loading="lazy"
+           
         />
         <h1 className="clashDisplayBig text-[20px] xl:text-[32px] pt-[20px]">
           Privacy Policy and <br />{" "}
@@ -52,7 +52,7 @@ const SectionNine = () => {
         <img
           src={darkPurpleStar}
           className="w-[15px] xl:w-[30px] absolute mt-[50px] ml-[70%] xl:ml-[540px] xl:mt-[-50px] blinking"
-          loading="lazy"
+           
         />
 
         <p className="text-[12px] xl:text-[14px] xl:w-[438px] font-[400] pb-[50px]">
@@ -63,7 +63,7 @@ const SectionNine = () => {
         <img
           src={darkPurpleStar}
           className="w-[10px] xl:w-[30px] absolute ml-[-15px] xl:ml-[-50px] mt-[350px] blinking"
-          loading="lazy"
+           
         />
 
         <section
@@ -94,7 +94,7 @@ const SectionNine = () => {
               <img
                 src={check}
                 className="w-[17px] xl:w-[20px] mr-[20px]"
-                loading="lazy"
+                 
               />
               <p className="text-[12px] xl:text-[14px] leading-[21px] xl:leading-[30px] mt-[-10px]">
                 {policy.policy}
@@ -114,34 +114,34 @@ const SectionNine = () => {
       <img
         src={Star}
         className="w-[10px] hidden xl:block absolute xl:ml-[75%] xl:mt-[150px] blinking"
-        loading="lazy"
+         
       />
       <section className="flex flex-col items-center justify-center xl:ml-[-100px] xl:mt-[-200px] mt-[-100px]">
         <img
           src={lock}
           className="absolute   z-[40] xl:ml-[70px] w-[249px] xl:w-[530px]"
-          loading="lazy"
+           
         />
         <img
           src={manOnLock}
-          className="relative z-[50] pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px]"
-          loading="lazy"
+          className="relative z-[40] pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px]"
+           
         />
 
         <img
           src={purpleStar}
           className="w-[15px] xl:ml-[-200px] ml-[-280px] mt-[-150px] absolute xl:mt-[550px] blinking"
-          loading="lazy"
+           
         />
         <img
           src={Star}
           className="w-[15px] xl:ml-[-350px] mt-[-150px] ml-[40%] absolute xl:mt-[750px] blinking"
-          loading="lazy"
+           
         />
         <img
           src={GreyStar}
-          className="w-[10px] mt-[400px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-[50]"
-          loading="lazy"
+          className="w-[10px] mt-[400px] ml-[280px] xl:w-[30px] xl:ml-[650px] absolute xl:mt-[750px] blinking z-[40]"
+           
         />
       </section>
     </section>

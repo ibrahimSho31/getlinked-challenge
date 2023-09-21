@@ -109,7 +109,7 @@ const Register = () => {
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
-        loading="lazy"
+         
       />
       <section
         className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 h-[90vh]
@@ -122,32 +122,32 @@ const Register = () => {
           <img
             src={purpleStar}
             className="w-[30px] blinking hidden xl:block mb-[50px]"
-            loading="lazy"
+             
           />
           <img
             src={Sitting}
             className="w-[195px] xl:w-[700px] z-40"
-            loading="lazy"
+             
           />
         </section>
 
         <img
           src={StarOutline}
           className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-          loading="lazy"
+           
         />
 
         <section className="flex flex-col">
           <img
             src={GreyStar}
             className="w-[15px] blinking self-end xl:mb-[50px] xl:mt-[-20px] mr-[40px] xl:mr-[0px] absolute xl:block mt-[50px]"
-            loading="lazy"
+             
           />
 
           <img
             src={darkPurpleStar}
             className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
-            loading="lazy"
+             
           />
 
           <section className="xl:bg-[#1c152e]  z-40 pb-[50px] flex flex-col w-full rounded-[12px] xl:w-[617px] px-[20px] xl:p-[50px]">
@@ -156,7 +156,7 @@ const Register = () => {
                 Register
               </h1>
               <h1 className="flex flex-row">
-                <img src={Walking} className="h-[30px]" loading="lazy" />
+                <img src={Walking} className="h-[30px]"   />
               </h1>
               <h1 className="uppercase text-[20px] xl:text-[24px] font-[400] pt-[10px] pb-[20px]">
                 Create your account
@@ -292,12 +292,12 @@ const Register = () => {
           <img
             src={Star}
             className="w-[15px] mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
-            loading="lazy"
+             
           />
           <img
             src={BtmFlare}
             className="absolute bottom-0 right-0 hidden xl:block xl:w-[600px]"
-            loading="lazy"
+             
           />
         </section>
       </section>
@@ -311,7 +311,7 @@ const Register = () => {
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
-        loading="lazy"
+         
       />
       <section
         className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 h-[90vh]
@@ -324,32 +324,32 @@ const Register = () => {
           <img
             src={purpleStar}
             className="w-[30px] blinking hidden xl:block mb-[50px]"
-            loading="lazy"
+             
           />
           <img
             src={Sitting}
             className="w-[195px] xl:w-[700px] z-40"
-            loading="lazy"
+             
           />
         </section>
 
         <img
           src={StarOutline}
           className="w-[30px] self-center hidden xl:block xl:mt-[-300px]"
-          loading="lazy"
+           
         />
 
         <section className="flex flex-col">
           <img
             src={GreyStar}
             className="w-[15px] blinking self-end xl:mb-[50px] xl:mt-[-20px] mr-[40px] xl:mr-[0px] absolute xl:block mt-[50px]"
-            loading="lazy"
+             
           />
 
           <img
             src={darkPurpleStar}
             className="w-[10px] xl:w-[30px]  mb-[20px] xl:mb-[0px] blinking absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
-            loading="lazy"
+             
           />
 
           <section className="xl:bg-[#1c152e]  z-40 pb-[50px] flex flex-col w-full rounded-[12px] xl:w-[617px] px-[20px] xl:p-[50px]">
@@ -358,7 +358,7 @@ const Register = () => {
                 Register
               </h1>
               <h1 className="flex flex-row">
-                <img src={Walking} className="h-[30px]" loading="lazy" />
+                <img src={Walking} className="h-[30px]"   />
               </h1>
               <h1 className="uppercase text-[20px] xl:text-[24px] font-[400] pt-[10px] pb-[20px]">
                 Create your account
@@ -494,12 +494,12 @@ const Register = () => {
           <img
             src={Star}
             className="w-[15px] mt-[-270px] mr-[20px] xl:w-[30px] blinking self-end xl:mb-[50px] xl:mt-[-20px] xl:mr-[-60px] relative"
-            loading="lazy"
+             
           />
           <img
             src={BtmFlare}
             className="absolute bottom-0 right-0 hidden xl:block xl:w-[600px]"
-            loading="lazy"
+             
           />
         </section>
       </section>

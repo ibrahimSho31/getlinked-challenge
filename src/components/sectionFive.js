@@ -41,16 +41,16 @@ const SectionFive = () => {
   return (
     <>
       <section
-        className="flex flex-col xl:flex-row items-center z-[50] justify-between 
+        className="flex flex-col xl:flex-row items-center z-[40] justify-between 
               xl:px-[0px] pt-[20px] xl:pt-[100px] pb-[30px]  overflow-x-hidden
   px-[20px] text-center xl:text-left border-[1px] border-solid
    border-[#ffffff2e] border-x-[0px] border-t-[0px]"
       >
-        <div className="z-[50] xl:px-[150px] mb-[100px] xl:mb-[0px]">
+        <div className="z-[40] xl:px-[150px] mb-[100px] xl:mb-[0px]">
           <img
             src={darkPurpleStar}
             className="w-[15px] xl:w-[30px] xl:1-[30px] xl:ml-[-30px] xl:pb-[20px] blinking"
-            loading="lazy"
+             
           />
           <h1 className="clashDisplayBig xl:text-[32px] text-[20px] pb-[20px]">
             Frequently Ask <br />
@@ -67,7 +67,7 @@ const SectionFive = () => {
                 <p className="montserrat text-[14px] text-left">
                   {question.question}
                 </p>
-                <img src={plus} loading="lazy" />
+                <img src={plus}   />
               </div>
 
               <hr className="bg-[#D434FE] w-full h-[2px] border-none mb-[30px]" />
@@ -80,22 +80,22 @@ const SectionFive = () => {
             <img
               src={smallMark}
               className="mt-[50px] w-[30px] ml-[50px] "
-              loading="lazy"
+               
             />
             <img
               src={bigMark}
               className="xl:ml-[80px] ml-[35px] mr-[20px] w-[50px] xl:mr-[40px]"
-              loading="lazy"
+               
             />
             <img
               src={purpleStar}
               className=" mr-[20px] blinking xl:mr-[40px]"
-              loading="lazy"
+               
             />
             <img
               src={smallMark}
               className="mt-[50px] w-[30px]"
-              loading="lazy"
+               
             />
           </div>
 
@@ -103,28 +103,28 @@ const SectionFive = () => {
             <img
               src={purpleStar}
               className="w-[20px] absolute mt-[-200px] xl:mt-[-400px] ml-[50px] blinking"
-              loading="lazy"
+               
             />
             <div className="flex flex-row">
               <img
                 src={GreyStar}
                 className=" blinking xl:flex hidden w-[30px]"
-                loading="lazy"
+                 
               />
               <img
                 src={GreyStar}
                 className=" blinking flex xl:hidden absolute mt-[150px] w-[20px]"
-                loading="lazy"
+                 
               />
               <img
                 src={thinker}
                 className="xl:ml-[-100px] min-w-[322px]"
-                loading="lazy"
+                 
               />
             </div>
 
             <div className="flex flex-row items-center justify-center">
-              <img src={Star} className="ml-[200px] blinking" loading="lazy" />
+              <img src={Star} className="ml-[200px] blinking"   />
             </div>
           </div>
         </div>

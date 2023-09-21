@@ -19,12 +19,12 @@ const SectionSeven = () => {
           <img
             src={purpleStar}
             className="w-[10px] xl:w-[30px] xl:hidden block mt-[-50px] ml-[50px] absolute xl:ml-[-600px] blinking"
-            loading="lazy"
+             
           />
           <img
             src={purpleStar}
             className="w-[10px] xl:w-[30px] xl:hidden block absolute mt-[50px] ml-[300px] blinking"
-            loading="lazy"
+             
           />
           <h1 className="clashDisplayBig text-[20px] z-40 xl:text-[32px]">
             Prizes and <br /> <span className="text-[#D434FE]">Rewards</span>
@@ -37,22 +37,22 @@ const SectionSeven = () => {
         <img
           src={FLare6}
           className="absolute w-[270px] xl:w-[600px] xl:ml-[200px] left-0 mt-[50px] xl:mt-[-100px] z-10"
-          loading="lazy"
+           
         />
         <img
           src={trophy}
           className="w-[321px] xl:w-[548px] z-40"
-          loading="lazy"
+           
         />
         <img
           src={Star}
           className="w-[20px] absolute ml-[40%] blinking hidden xl:flex"
-          loading="lazy"
+           
         />
         <img
           src={Star}
           className="w-[10px] xl:w-[20px] absolute mt-[550px] ml-[250px] blinking"
-          loading="lazy"
+           
         />
       </section>
 
@@ -61,7 +61,7 @@ const SectionSeven = () => {
           <img
             src={purpleStar}
             className="w-[10px] xl:w-[30px] hidden xl:block absolute xl:ml-[-600px] blinking"
-            loading="lazy"
+             
           />
           <div className="xl:text-left z-40 hidden xl:flex text-center flex-col">
             <h1 className="clashDisplayBig text-[32px]">
@@ -75,12 +75,12 @@ const SectionSeven = () => {
           <img
             src={purpleStar}
             className="w-[30px] hidden xl:block absolute xl:ml-[300px] blinking mt-[70px]"
-            loading="lazy"
+             
           />
           <img
             src={Star}
             className="w-[10px] xl:w-[20px] ml-[-100px] absolute xl:ml-[500px] blinking xl:mt-[250px]"
-            loading="lazy"
+             
           />
         </div>
 
@@ -92,7 +92,7 @@ const SectionSeven = () => {
             <img
               src={silver}
               className="w-[179px] min-w-[80px] relative top-[-80px] xl:top-[-120px] mb-[-80px]"
-              loading="lazy"
+               
             />
             <h1 className="text-[12px] xl:text-[36px] font-[900]">2nd</h1>
             <p className="text-[12px] xl:text-[24px] font-[600]">Runner</p>
@@ -105,7 +105,7 @@ const SectionSeven = () => {
             <img
               src={gold}
               className="w-[125px] xl:w-[296px] relative z-[40] top-[-20px] xl:top-[-200px]"
-              loading="lazy"
+               
             />
             <div
               className="bg-[#903AFF1F] relative top-[-60px] xl:top-[-300px] rounded-[8px] w-[90px] xl:w-[212px] flex flex-col items-center justify-center
@@ -127,7 +127,7 @@ const SectionSeven = () => {
             <img
               src={bronze}
               className="w-[179px] min-w-[80px] relative top-[-80px] xl:top-[-120px] mb-[-80px]"
-              loading="lazy"
+               
             />
             <h1 className="text-[12px] xl:text-[36px] font-[900]">3rd</h1>
             <p className="text-[12px] xl:text-[24px] font-[600]">Runner</p>
@@ -139,13 +139,13 @@ const SectionSeven = () => {
           <img
             src={Flare5}
             className="absolute right-0 w-[200px] xl:w-[300px] z-10"
-            loading="lazy"
+             
           />
         </div>
         <img
           src={GreyStar}
           className="w-[10px] xl:w-[20px] absolute xl:ml-[200px] ml-[100px] blinking mt-[300px] xl:mt-[550px]"
-          loading="lazy"
+           
         />
       </section>
     </section>
