@@ -45,6 +45,7 @@ const SectionFive = () => {
               xl:px-[0px] pt-[20px] xl:pt-[100px] pb-[30px]  overflow-x-hidden
   px-[20px] text-center xl:text-left border-[1px] border-solid
    border-[#ffffff2e] border-x-[0px] border-t-[0px]"
+   id="faqs"
       >
         <div className="z-[40] xl:px-[150px] mb-[100px] xl:mb-[0px]">
           <img

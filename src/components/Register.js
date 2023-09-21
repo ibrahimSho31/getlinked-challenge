@@ -13,6 +13,7 @@ import {
   StarOutline,
   Sitting,
   Walking,
+  SelectArrow
 } from "./assets";
 
 import { useApplication } from "./hooks/useApplication";
@@ -253,11 +254,22 @@ const Register = () => {
                         Category
                       </h1>
                       <select
-                        className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px]"
+                        className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full px-[20px] "
                         value={category}
                         onChange={(e) => {
                           setCategory(e.target.value);
                         }}
+                        style={{
+    // Hide the default arrow
+    appearance: 'none',
+    '-webkit-appearance': 'none',
+    '-moz-appearance': 'none',
+    
+    backgroundImage: `url(${SelectArrow})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right 10px center', // Position the custom arrow on the right side
+    backgroundSize: '10px', // Adjust the size of the custom arrow
+  }}
                       >
                         <option>Select your category</option>
                         {results.map((result, id) => (
@@ -276,6 +288,17 @@ const Register = () => {
                         className="h-[47px] bg-[#FFFFFF08] text-[12px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] xl:bg-transparent w-full pl-[10px] xl:px-[20px]"
                         onChange={handleCategoryChange}
                         value={groupSize}
+                        style={{
+    // Hide the default arrow
+    appearance: 'none',
+    '-webkit-appearance': 'none',
+    '-moz-appearance': 'none',
+    
+    backgroundImage: `url(${SelectArrow})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right 10px center', // Position the custom arrow on the right side
+    backgroundSize: '10px', // Adjust the size of the custom arrow
+  }}
                       >
                         <option value="">Select</option>
                         <option value="1">1</option>

@@ -8,6 +8,7 @@ const SectionThree = () => {
               xl:px-[0px] xl:pt-[50px] pb-[30px] 
   px-[20px] text-center xl:text-left border-[1px] border-solid
    border-[#ffffff2e] border-x-[0px] border-t-[0px]"
+      
       >
         <img
           src={topPurple}

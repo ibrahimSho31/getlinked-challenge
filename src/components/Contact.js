@@ -294,7 +294,17 @@ const Contact = () => {
                     />
 
                     <input
-                      onChange={(e) => setNumber(e.target.value)}
+                                              onChange={(e) => {
+                          let inputValue = e.target.value;
+
+                          inputValue = inputValue.replace(/[^0-9]/g, "");
+
+                          if (inputValue.length > 13) {
+                            inputValue = inputValue.slice(0, 13);
+                          }
+
+                          setNumber(inputValue);
+                        }}
                       value={number}
                       placeholder="Phone Number"
                       type="text"

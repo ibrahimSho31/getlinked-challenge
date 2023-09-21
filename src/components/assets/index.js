@@ -72,3 +72,5 @@ export {default as FLare6} from "./svgs/Flare6.svg"
 
 export {default as Purp1} from "./svgs/purp1.svg"
 export {default as Purp2} from "./svgs/purp2.svg"
+
+export {default as SelectArrow} from "./svgs/selArr.svg"

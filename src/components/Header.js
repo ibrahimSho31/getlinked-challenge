@@ -29,15 +29,15 @@ const Header = () => {
 
         <div className="hidden xl:flex flex-row items-center justify-between">
           <div className="flex flex-row items-center justify-between ">
-            <Link to="/" className="px-[40px] z-20">
-              <p>Timeline</p>
-            </Link>
+            <a href="/#timeline" className="px-[40px] z-20">
+              Timeline
+            </a>
             <Link to="/" className="px-[40px] z-20">
               <p>Overview</p>
             </Link>
-            <Link to="/" className="px-[40px] z-20">
-              <p>FAQs</p>
-            </Link>
+            <a href="/#faqs" className="px-[40px] z-20">
+              FAQs
+            </a>
 
             <NavLink
               to="/contactus"
@@ -85,17 +85,20 @@ const Header = () => {
             >
               <img src={Close} className="w-[15px]"   />
             </button>
-            <div className="flex flex-col items-start text-left pl-[30px] w-full">
-              <div className="flex flex-col items-start ">
-                <Link to="/">
-                  <p>Timeline</p>
-                </Link>
-                <Link to="/" className="my-[-20px]">
+            <div className="flex z-50 flex-col items-start text-left pl-[30px] w-full">
+              <div className="flex flex-col z-50 items-start ">
+                <a href="/#timeline"
+                onClick={switcher}>
+                  Timeline
+                </a>
+                <Link to="/" className="my-[-20px]"
+                onClick={switcher}>
                   <p>Overview</p>
                 </Link>
-                <Link to="/">
-                  <p>FAQs</p>
-                </Link>
+                <a href="/#faqs"
+                onClick={switcher}>
+                  FAQs
+                </a>
                 <NavLink
                   to="/contactus"
                   className={({ isActive }) =>
@@ -103,6 +106,7 @@ const Header = () => {
                       ? "mt-[-20px] flex flex-col activeHeaderBtn  justify-center items-center font-[900] "
                       : "mt-[-20px] flex flex-row items-center justify-center transition duration-300 ease-in-out"
                   }
+                  onClick={switcher}
                 >
                   <p>Contact</p>
                 </NavLink>
@@ -116,6 +120,7 @@ const Header = () => {
                       ? "flex flex-col w-[172px] h-[53px] mt-[20px] bodyWrap text-white rounded-[8px] justify-center items-center font-[900] "
                       : " w-[172px] h-[53px] headerBtn  mt-[20px] flex flex-row items-center justify-center transition duration-300 ease-in-out rounded-[8px] "
                   }
+                  onClick={switcher}
                 >
                   <button className=" ">Register</button>
                 </NavLink>

@@ -42,7 +42,9 @@ const SectionSix = () => {
   ];
   return (
     <>
-      <section className="pb-[50px] pt-[50px] flex flex-col items-center justify-center">
+      <section className="pb-[50px] pt-[50px] flex flex-col items-center justify-center"
+      id="timeline"
+      >
         <h1 className="clashDisplayBig text-[20px] xl:text-[32px]">Timeline</h1>
 
         <p className="montserrat w-[290px] xl:w-[100%] text-[13px] xl:text-[14px] ">
@@ -64,8 +66,9 @@ const SectionSix = () => {
               >
                 <section className=" flex flex-col xl:flex-row xl:items-end items-start w-full montserrat">
                   {/* Conditional rendering of timeline.header and timeline.body */}
+
                   {timeline.id % 2 === 0 ? (
-                    <div className=" xl:order-3 hidden xl:flex flex-col text-left order-2">
+                    <div className=" xl:order-3 xl:w-[500px] hidden xl:flex flex-col text-left order-2">
                       <h1 className="text-[#D434FE] xl:w-[511px]  text-[24px] font-[900]">
                         {timeline.header}
                       </h1>
@@ -74,7 +77,7 @@ const SectionSix = () => {
                       </p>
                     </div>
                   ) : (
-                    <div className=" xl:order-1 hidden xl:flex flex-col text-right flex flex-col items-end order-2">
+                    <div className=" xl:order-1 xl:w-[500px] hidden xl:flex flex-col text-right flex flex-col items-end order-2">
                       <h1 className="text-[#D434FE]  xl:w-[511px] text-[24px] font-[900]">
                         {timeline.header}
                       </h1>
@@ -85,7 +88,7 @@ const SectionSix = () => {
                   )}
 
                   <div className="flex flex-row xl:order-2 xl:mx-[50px]">
-                    <div className="flex flex-col items-center justify-center  ">
+                    <div className="flex flex-col items-center xl:w-[70px] justify-center  ">
                       <img
                         src={line}
                         className={`flex w-[4px] ${
@@ -112,12 +115,12 @@ const SectionSix = () => {
 
                   {/* Conditional rendering of timeline.date based on even or odd id */}
                   {timeline.id % 2 === 0 ? (
-                    <div className="xl:order-1 hidden xl:flex order-2 xl:ml-[275px] self-center mt-[100px] text-[#D434FE] text-[24px] montserrat font-[900]">
-                      <h1>{timeline.date}</h1>
+                    <div className="xl:order-1 hidden xl:flex  xl:flex-row xl:items-end xl:justify-end order-2 xl:w-[500px] xl:text-right self-center mt-[100px] text-[#D434FE] text-[24px] montserrat font-[900]">
+                      <h1 className="text-right flex flex-row items-end justify-end">{timeline.date}</h1>
                     </div>
                   ) : (
-                    <div className="xl:order-3 hidden xl:flex order-2 xl:mr-[275px] self-center mt-[100px] text-[#D434FE] text-[24px] montserrat font-[900]">
-                      <h1>{timeline.date}</h1>
+                    <div className="xl:order-3 hidden xl:flex xl:flex-row xl:items-start xl:justify-start  order-2 xl:w-[500px] xl:text-right  self-center mt-[100px] text-[#D434FE] text-[24px] montserrat font-[900]">
+                      <h1 className="text-right flex flex-row items-end justify-end">{timeline.date}</h1>
                     </div>
                   )}
 
