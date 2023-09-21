@@ -309,7 +309,7 @@ const Register = () => {
             className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
           />
           <section
-            className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 h-[100vh] xl:h-[100%]
+            className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 sm:h-[100vh] xl:h-[100%]
              text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
           >
             <section className=" flex flex-col text-[16px] font-[400]">
