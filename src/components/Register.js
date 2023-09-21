@@ -304,18 +304,18 @@ const Register = () => {
       </section>
                 </>
                 :
-                <section className="h-[100vh]">
+                <section className="xl:pb-[50px]">
       <Header />
 
-      {/* {open && <CongratsDialog open={open} setOpen={setOpen} />} */}
+      {open && <CongratsDialog open={open} setOpen={setOpen} />}
       <img
         src={topPurple}
         className="absolute w-[300px] xl:w-[800px] xl:mt-[-100px] xl:ml-[-50px] rotate-[270deg]"
          
       />
       <section
-        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
-             text-left xl:px-[150px] px-[20px] xl:justify-between h-[100%] xl:pt-[30px] pb-[50px]"
+        className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 
+             text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
       >
         <section className=" flex flex-col text-[16px] font-[400]">
           <h1 className="text-[#D434FE] clashDisplayBig text-[20px]  ml-[-60px] block xl:hidden ">
