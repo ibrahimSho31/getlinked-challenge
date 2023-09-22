@@ -176,3 +176,82 @@ background-blend-mode: hard-light;
   }
   
 
+  .image-transition {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Define your desired transition properties */
+  }
+/* 
+/* Add this to your CSS file */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px); /* Middle position (upward) */
+  }
+}
+
+/* Add this to your CSS file */
+.floating-image {
+  animation: floatUpDown 3s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+}
+
+.slide-in-r {
+  animation: slideInFromLeft 1s ease forwards; /* Adjust the duration and timing function as needed */
+}
+
+.slide-in-l {
+  animation: slideInFromRight 1s ease forwards; /* Adjust the duration and timing function as needed */
+}
+
+/* Add this to your CSS file */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Start position */
+  }
+  to {
+    transform: translateX(0); /* End position */
+  }
+}
+
+/* Add this to your CSS file */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start position */
+  }
+  to {
+    transform: translateX(0); /* End position */
+  }
+}
+
+
+@media (max-width: 356px) {
+  .overImg{
+    margin-left: 0px;
+  }
+  .overText{
+    width: 200px;
+  }
+  *{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .ftr{
+    padding: 100px 0px 100px 20px;
+  }
+  .ovrPlc{
+    margin-top: 0px;
+  }
+  .ovrTxt{
+    font-size: 14px;
+  }
+  .ovrTxt2{
+    font-size: 20px
+  }
+  .imgOvr{
+    overflow-y: hidden;
+  }
+  .tl{
+    margin-bottom: 20px;
+  }
+}

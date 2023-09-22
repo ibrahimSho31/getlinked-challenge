@@ -9,8 +9,40 @@ import {
   GreyStar,
   Star,
 } from "./assets";
+import { useEffect, useRef } from "react";
 
 const SectionFive = () => {
+  const secfiveRef = useRef(null); 
+  const slidingDiv3Ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            secfiveRef.current.style.opacity = 1;
+            slidingDiv3Ref.current.classList.add("slide-in-r"); 
+          } else {
+            
+            secfiveRef.current.style.opacity = 0;
+          }
+        });
+      },
+      { threshold: 0.2 } 
+    );
+
+    const secfiveElement = secfiveRef.current;
+
+    if (secfiveElement) {
+      observer.observe(secfiveElement);
+  
+      return () => {
+        observer.unobserve(secfiveElement);
+      };
+    }
+  }, []); 
+
   const questions = [
     {
       id: 1,
@@ -47,7 +79,7 @@ const SectionFive = () => {
    border-[#ffffff2e] border-x-[0px] border-t-[0px]"
    id="faqs"
       >
-        <div className="z-[40] xl:px-[150px] mb-[100px] xl:mb-[0px]">
+        <div className="z-[40] xl:px-[150px] mb-[100px] xl:mb-[0px]" ref={slidingDiv3Ref}>
           <img
             src={darkPurpleStar}
             className="w-[15px] xl:w-[30px] xl:1-[30px] xl:ml-[-30px] xl:pb-[20px] blinking"
@@ -119,8 +151,8 @@ const SectionFive = () => {
               />
               <img
                 src={thinker}
-                className="xl:ml-[-100px] min-w-[322px]"
-                 
+                className="xl:ml-[-100px] min-w-[322px] floating-image"
+                ref={secfiveRef}
               />
             </div>
 

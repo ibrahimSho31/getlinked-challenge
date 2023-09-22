@@ -9,7 +9,40 @@ import {
   Star,
 } from "./assets";
 import { NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
+
 const SectionFour = () => {
+  const secfourRef = useRef(null); 
+  const slidingDiv2Ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            secfourRef.current.style.opacity = 1;
+            slidingDiv2Ref.current.classList.add("slide-in-l");
+          } else {
+            
+            secfourRef.current.style.opacity = 0;
+          }
+        });
+      },
+      { threshold: 0.2 } 
+    );
+
+    const secfourElement = secfourRef.current;
+
+    if (secfourElement) {
+      observer.observe(secfourElement);
+  
+      return () => {
+        observer.unobserve(secfourElement);
+      };
+    }
+  }, []); 
+
   const attributes = [
     {
       id: 1,
@@ -69,8 +102,8 @@ const SectionFour = () => {
           />
           <img
             src={people}
-            className="self-center min-w-[264px] w-full z-40"
-             
+            className="self-center min-w-[264px] w-full z-40 floating-image"
+            ref={secfourRef}
           />
 
           <img
@@ -85,7 +118,7 @@ const SectionFour = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center w-full xl:w-[50%]">
+        <div className="flex flex-col items-center w-full xl:w-[50%]" ref={slidingDiv2Ref}>
           <div
             className="clashDisplay text-[25px] xl:text-[32px] flex w-full
            flex-row items-center justify-center xl:justify-between"
@@ -121,7 +154,7 @@ const SectionFour = () => {
 
           <img
             src={Purp2}
-            className="absolute right-0 z-10 mt-[600px] xl:mt-[400px] w-[250px] xl:w-[500px]"
+            className="absolute overImg ml-[100px] z-10 mt-[600px] xl:mt-[400px] w-[250px] xl:w-[500px]"
              
           />
         </div>

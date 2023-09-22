@@ -1,6 +1,40 @@
 import styles from "./Landing.css";
 import { Woman, topPurple, Flare5 } from "./assets";
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 const SectionThree = () => {
+  const lastDivRef = useRef(null); 
+  const slidingDivRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            lastDivRef.current.style.opacity = 1;
+            slidingDivRef.current.classList.add("slide-in-r"); 
+          } else {
+            
+            lastDivRef.current.style.opacity = 0;
+            
+          }
+        });
+      },
+      { threshold: 0.2 } 
+    );
+
+    const lastDivElement = lastDivRef.current;
+
+    if (lastDivElement) {
+      observer.observe(lastDivElement);
+  
+      return () => {
+        observer.unobserve(lastDivElement);
+      };
+    }
+  }, []); 
+
   return (
     <>
       <section
@@ -16,7 +50,7 @@ const SectionThree = () => {
            
         />
 
-        <div className="z-[40] xl:px-[100px]">
+        <div className="z-[40] xl:px-[100px] " ref={slidingDivRef}>
           <h1 className="clashDisplayBig xl:text-[32px] text-[20px] z-40 pb-[20px]">
             Rules and <br />
             <span className="text-[#D434FE]">Guidelines</span>
@@ -35,13 +69,23 @@ const SectionThree = () => {
           className="absolute right-0 w-[150px] mb-[-200px] xl:mt-[550px] xl:w-[300px] z-10"
            
         />
-        <div className="z-40">
+
+
+<div className="z-40"  ref={lastDivRef}>
+                <motion.ul
+  initial={{ opacity: 0}}
+  animate={{ opacity: 1}}
+          transition={{ duration: 10, delay: 0.5 }}
+        >
           <img
             src={Woman}
-            className="xl:w-[664px] w-[294px] z-40"
-             
+            className="xl:w-[664px] w-[294px] z-40 floating-image"
+             alt="Woman"
           />
+          </motion.ul>
         </div>
+        
+
       </section>
     </>
   );

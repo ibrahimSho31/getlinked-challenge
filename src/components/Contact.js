@@ -217,7 +217,7 @@ const Contact = () => {
             className="montserrat flex flex-col xl:flex-row items-center xl:items-start
              text-left xl:px-[150px] px-[20px] justify-between h-[100vh] xl:pt-[30px]"
           >
-            <section className=" hidden xl:flex flex-col text-[16px] font-[400] z-40">
+            <section className=" hidden xl:flex flex-col text-[16px] font-[400] z-40 slide-in-r ">
               <img
                 src={purpleStar}
                 className="w-[30px] blinking hidden xl:block mb-[50px]"
@@ -266,7 +266,7 @@ const Contact = () => {
                 className="w-[10px] xl:w-[30px] z-30 mb-[20px] xl:mb-[0px] blinking xl:absolute xl:mt-[500px] xl:ml-[-15px] ml-[200px]"
               />
 
-              <section className="xl:bg-[#1c152e] z-20 flex flex-col w-full rounded-[12px] xl:w-[617px] px-[50px] xl:p-[50px]">
+              <section className="xl:bg-[#1c152e] z-20 flex flex-col w-full rounded-[12px] xl:w-[617px] px-[50px] xl:p-[50px] slide-in-l">
                 <form onSubmit={handleContactUs}>
                   <h1 className="text-[#D434FE] clashDisplayBig text-[20px] ">
                     Questions or need assistance?

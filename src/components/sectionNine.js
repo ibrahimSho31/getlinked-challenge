@@ -9,7 +9,40 @@ import {
   Flare2,
 } from "./assets";
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
+
 const SectionNine = () => {
+  const secnineRef = useRef(null); 
+  const slidingDiv4Ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            secnineRef.current.style.opacity = 1;
+            slidingDiv4Ref.current.classList.add("slide-in-r"); 
+          } else {
+            
+            secnineRef.current.style.opacity = 0;
+          }
+        });
+      },
+      { threshold: 0.1 } 
+    );
+
+    const secnineElement = secnineRef.current;
+
+    if (secnineElement) {
+      observer.observe(secnineElement);
+  
+      return () => {
+        observer.unobserve(secnineElement);
+      };
+    }
+  }, []); 
+
   const policies = [
     {
       id: 1,
@@ -29,7 +62,7 @@ const SectionNine = () => {
         px-[30px] flex flex-col xl:flex-row items-center xl:items-start justify-between montserrat xl:px-[130px] py-[50px]
         "
     >
-      <section className="text-center xl:text-left">
+      <section className="text-center xl:text-left" ref={slidingDiv4Ref}>
         <img
           src={GreyStar}
           className="w-[15px] mt-[-20px] ml-[70%] xl:w-[30px] absolute xl:ml-[330px] blinking"
@@ -38,7 +71,7 @@ const SectionNine = () => {
 
         <img
           src={Flare2}
-          className="absolute w-[500px] left-0 mt-[550px] z-10"
+          className="absolute w-[500px] left-[-150px] mt-[550px] z-10"
            
         />
         <h1 className="clashDisplayBig text-[20px] xl:text-[32px] pt-[20px]">
@@ -96,7 +129,7 @@ const SectionNine = () => {
                 className="w-[17px] xl:w-[20px] mr-[20px]"
                  
               />
-              <p className="text-[12px] xl:text-[14px] leading-[21px] xl:leading-[30px] mt-[-10px]">
+              <p className="text-[12px] xl:text-[14px] leading-[21px] xl:leading-[30px] mt-[-10px] ovrPlc">
                 {policy.policy}
               </p>
             </div>
@@ -126,8 +159,9 @@ const SectionNine = () => {
         />
         <img
           src={manOnLock}
-          className="relative z-10 pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px]"
-           
+          className="relative z-10 pt-[200px] xl:pt-[300px] xl:w-[559px] w-[269px] floating-image"
+          ref={secnineRef}
+          alt="Man On Lock"
         />
 
         <img

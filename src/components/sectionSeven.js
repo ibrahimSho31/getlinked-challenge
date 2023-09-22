@@ -10,8 +10,37 @@ import {
   FLare6,
 } from "./assets";
 import styles from "./Landing.css";
-
+import { useEffect, useRef } from "react";
 const SectionSeven = () => {
+  const secsevenRef = useRef(null); 
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            secsevenRef.current.style.opacity = 1;
+          } else {
+            
+            secsevenRef.current.style.opacity = 0;
+          }
+        });
+      },
+      { threshold: 0.2 } 
+    );
+
+    const secsevenElement = secsevenRef.current;
+
+    if (secsevenElement) {
+      observer.observe(secsevenElement);
+  
+      return () => {
+        observer.unobserve(secsevenElement);
+      };
+    }
+  }, []); 
+  
   return (
     <section className="flex flex-col xl:flex-row montserrat overflow-x-hidden items-center justify-between
     xl:px-[100px] pt-[70px] xl:pt-[100px] bg-[#130b23]
@@ -43,8 +72,8 @@ const SectionSeven = () => {
         />
         <img
           src={trophy}
-          className="w-[321px] xl:w-[548px] z-40"
-           
+          className="w-[321px] xl:w-[548px] z-40 floating-image"
+          ref={secsevenRef}
         />
         <img
           src={Star}
@@ -111,7 +140,7 @@ const SectionSeven = () => {
             />
             <div
               className="bg-[#903AFF1F] relative top-[-60px] xl:top-[-300px] rounded-[8px] w-[90px] xl:w-[212px] flex flex-col items-center justify-center
-                     h-[147px] xl:h-[320px] border-[1px] border-solid border-[#903AFF] mx-[10px] xl:mx-[30px]  "
+                     h-[147px] xl:h-[320px] border-[1px] border-solid border-[#903AFF] mx-[10px] xl:mx-[30px] "
             >
               <h1 className="text-[12px] xl:text-[36px] font-[900] ">1st</h1>
               <p className="text-[12px] xl:text-[24px] font-[600]">Runner</p>

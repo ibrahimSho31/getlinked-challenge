@@ -62,9 +62,9 @@ const SectionSix = () => {
             {timelines.map((timeline, id) => (
               <div
                 key={id}
-                className="w-full flex flex-col items-center justify-between pb-[20px] xl:pb-[0px]"
+                className="w-full  flex flex-col items-center justify-between pb-[20px] xl:pb-[0px]"
               >
-                <section className=" flex flex-col xl:flex-row xl:items-end items-start w-full montserrat">
+                <section className="imgOvr flex flex-col xl:flex-row xl:items-end items-start w-full montserrat tl">
                   {/* Conditional rendering of timeline.header and timeline.body */}
 
                   {timeline.id % 2 === 0 ? (

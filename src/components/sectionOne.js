@@ -1,3 +1,4 @@
+
 import {
   Chain,
   Man,
@@ -33,6 +34,57 @@ const SectionOne = () => {
     img.src = imageUrl;
   }, []);
 
+    // Set the target date to September 30th
+    const targetDate = new Date("2023-09-30T00:00:00Z");
+
+    // Calculate the remaining time
+    const calculateTimeRemaining = () => {
+      const currentDate = new Date();
+      const timeDifference = targetDate - currentDate;
+  
+      if (timeDifference <= 0) {
+        // Timer has reached the target date
+        return { hours: "00", minutes: "00", seconds: "00" };
+      }
+  
+      const hours = String(Math.floor((timeDifference / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+      const minutes = String(Math.floor((timeDifference / 1000 / 60) % 60)).padStart(2, "0");
+      const seconds = String(Math.floor((timeDifference / 1000) % 60)).padStart(2, "0");
+  
+      return { hours, minutes, seconds };
+    };
+  
+    const [remainingTime, setRemainingTime] = useState(calculateTimeRemaining());
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        const updatedRemainingTime = calculateTimeRemaining();
+        setRemainingTime(updatedRemainingTime);
+  
+        if (updatedRemainingTime.hours === "00" && updatedRemainingTime.minutes === "00" && updatedRemainingTime.seconds === "00") {
+          clearInterval(interval); // Stop the timer when it reaches 00:00:00
+        }
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+
+    const text = "Igniting a Revolution in HR Innovation";
+    const [displayText, setDisplayText] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const typingSpeed = 50; // Typing speed in milliseconds
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        if (currentIndex < text.length) {
+          setDisplayText(text.substring(0, currentIndex + 1));
+          setCurrentIndex(currentIndex + 1);
+        }
+      }, typingSpeed);
+  
+      return () => clearTimeout(timer);
+    }, [currentIndex]);
+    
 
   return (
     <>
@@ -55,10 +107,10 @@ const SectionOne = () => {
           />
 
           <h1
-            className="montserrat pt-[30px] xl:pt-[0px] pb-[30px] text-[16px] xl:w-full w-[330px] xl:text-[36px] 
+            className="montserrat ovrTxt pt-[30px] xl:pt-[0px] pb-[30px] text-[16px] xl:w-full w-[330px] xl:text-[36px] 
                     italic font-[700] flex flex-col xl:pr-[50px] justify-end xl:items-end items-center"
           >
-            Igniting a Revolution in HR Innovation
+              {displayText}
             <img
               src={purpleLine}
               className="flex flex-row self-end justify-end xl:w-[253px] w-[115px] "
@@ -85,10 +137,10 @@ const SectionOne = () => {
               className="absolute w-[18px] xl:w-[53px] xl:mt-[-50px] xl:ml-[450px] ml-[180px] mt-[-20px]"
                
             />
-            <h1 className="clashDisplayBig text-[32px] xl:text-[70px]  flex flex-row xl:mb-[-30px]">
+            <h1 className="clashDisplayBig ovrTxt2 text-[32px] xl:text-[70px]  flex flex-row xl:mb-[-30px]">
               getlinked Tech
             </h1>
-            <h1 className="clashDisplayBig text-[32px] xl:text-[70px]  flex flex-row">
+            <h1 className="clashDisplayBig ovrTxt2 text-[32px] xl:text-[70px]  flex flex-row">
               Hackathon <span className="text-[#D434FE] pl-[5px]"> 1.0</span>{" "}
               <img
                 src={Chain}
@@ -127,14 +179,17 @@ const SectionOne = () => {
                
             />
 
-            <h1 className="text-[48px] mt-[20px] xl:mt-[-40px] xl:text-[64px] unica flex flex-row items-center">
-              00<span className="text-[16px] mt-[20px] xl:mt-[30px]">H</span> 00{" "}
-              <span className="text-[16px] mt-[20px] xl:mt-[30px]">M</span> 00{" "}
-              <span className="text-[16px] mt-[20px] xl:mt-[30px]">S</span>
-            </h1>
+<h1 className="text-[48px] mt-[20px] xl:mt-[-40px] xl:text-[64px] unica flex flex-row items-center">
+      {remainingTime.hours}{" "}
+      <span className="text-[16px] mt-[20px] xl:mt-[30px]">H</span>{" "}
+      {remainingTime.minutes}{" "}
+      <span className="text-[16px] mt-[20px] xl:mt-[30px]">M</span>{" "}
+      {remainingTime.seconds}{" "}
+      <span className="text-[16px] mt-[20px] xl:mt-[30px]">S</span>
+    </h1>
           </div>
 
-          <div className=" flex flex-col items-end justify-end xl:pt-[0px] pt-[20px] xl:mb-[-50px]">
+          <div className=" flex flex-col imgOvr items-end justify-end xl:pt-[0px] pt-[20px] xl:mb-[-50px]">
             <img
               src={Globe}
               className=" z-10 xl:h-[600px] xl:w-[550px] blend w-[338px]"

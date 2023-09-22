@@ -109,7 +109,7 @@ const Register = () => {
               className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
              text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
             >
-<img src={Sitting} className="w-[195px] xl:w-[700px] z-40" />
+<img src={Sitting} className="w-[195px] xl:w-[700px] z-40 " />
 <img src={Walking} className="h-[30px]" />
               <section className="flex flex-col">
 
@@ -139,7 +139,7 @@ const Register = () => {
             className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40 sm:h-[100vh] xl:h-[100%]
              text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
           >
-            <section className=" flex flex-col text-[16px] font-[400]">
+            <section className=" flex flex-col text-[16px] font-[400] floating-image">
               <h1 className="text-[#D434FE] clashDisplayBig text-[20px]  ml-[-60px] block xl:hidden ">
                 Register
               </h1>
@@ -147,7 +147,7 @@ const Register = () => {
                 src={purpleStar}
                 className="w-[30px] blinking hidden xl:block mb-[50px]"
               />
-              <img src={Sitting} className="w-[195px] xl:w-[700px] z-40" />
+              <img src={Sitting} className="w-[195px] xl:w-[700px] z-40 slide-in-r " />
             </section>
 
             <img
@@ -167,7 +167,7 @@ const Register = () => {
             xl:mt-[500px] xl:ml-[-50px] ml-[200px]"
               />
 
-              <section className="xl:bg-[#1c152e]  z-40 pb-[50px] flex flex-col w-full rounded-[12px] xl:w-[617px] px-[20px] xl:p-[50px]">
+              <section className="xl:bg-[#1c152e]  z-40 pb-[50px] flex flex-col w-full rounded-[12px] xl:w-[617px] px-[20px] xl:p-[50px] slide-in-l">
                 <form onSubmit={handleApplication}>
                   <h1 className="text-[#D434FE] clashDisplayBig text-[20px] hidden xl:block">
                     Register
