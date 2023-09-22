@@ -11,7 +11,29 @@ import {
 } from "./assets";
 import { NavLink } from "react-router-dom";
 import styles from "./Landing.css";
+import { useEffect, useState } from "react";
 const SectionOne = () => {
+
+  const [imageSrc, setImageSrc] = useState(null);
+
+  useEffect(() => {
+    // Define the image source URL
+    const imageUrl = Man;
+
+    // Create an image element
+    const img = new Image();
+
+    // Add an event listener to handle the image load
+    img.onload = () => {
+      // Once the image is loaded, update the state variable
+      setImageSrc(imageUrl);
+    };
+
+    // Set the image source to trigger the load event
+    img.src = imageUrl;
+  }, []);
+
+
   return (
     <>
       <section
@@ -118,14 +140,16 @@ const SectionOne = () => {
               className=" z-10 xl:h-[600px] xl:w-[550px] blend w-[338px]"
               
             />
-            <img
-              src={Man}
+     {imageSrc && (
+        <img
+          src={imageSrc}
               className="relative mt-[-300px] xl:mt-[-600px] z-1 xl:h-[600px] xl:w-[550px] w-[338px]"
               
               style={{
                 filter: "hue-rotate(230deg)",
               }}
             />
+     )}
           </div>
         </section>
       </section>
