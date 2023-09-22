@@ -115,12 +115,12 @@ const SectionOne = () => {
           <div className=" flex flex-col items-end justify-end xl:pt-[0px] pt-[20px] xl:mb-[-50px]">
             <img
               src={Globe}
-              className="absolute z-10 xl:h-[600px] xl:w-[550px] blend w-[338px]"
+              className=" z-10 xl:h-[600px] xl:w-[550px] blend w-[338px]"
               
             />
             <img
               src={Man}
-              className=" z-1 xl:h-[600px] xl:w-[550px] w-[338px]"
+              className="relative mt-[-300px] xl:mt-[-600px] z-1 xl:h-[600px] xl:w-[550px] w-[338px]"
               
               style={{
                 filter: "hue-rotate(230deg)",
