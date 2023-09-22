@@ -32,6 +32,33 @@ const Footer = () => {
     },
   ];
 
+  const scrollToTimeline = () => {
+    const timeline = document.getElementById("timeline");
+    timeline.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+
+  const scrollToFaqs = () => {
+    const faqs = document.getElementById("faqs");
+    faqs.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+
+  const scrollToPrivacy = () => {
+    const privacy = document.getElementById("privacyPolicy");
+    privacy.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
+ 
   return (
     <section className="bg-[#100B20]  montserrat text-left flex flex-col items-center w-[100] py-[100px] px-[70px] xl:px-[0px] ftr">
       <section className="flex xl:w-[80%] w-[100%] flex-col xl:flex-row items-start xl:items-center justify-between xl:h-[201px]">
@@ -54,7 +81,7 @@ const Footer = () => {
             <p className="xl:mr-[30px]r">Terms of Use</p>
 
             <hr className="bg-[#D434FE] w-[2px] h-[20px] xl:h-[100%] border-none mx-[30px]" />
-            <p>Privacy Policy</p>
+            <p onClick={scrollToPrivacy} className="cursor-pointer">Privacy Policy</p>
           </section>
         </div>
 
@@ -62,16 +89,33 @@ const Footer = () => {
           <h1 className="text-[#D434FE] text-[14px] font-[600]">
             Userful Links
           </h1>
-          {links.map((link, id) => (
-            <div key={id} className="py-[10px]">
-            {
-                link.name === 'Register' ? <Link to='/register' className="text-[12px] font-[400] ">
+          
+          <div className="py-[10px]">
+          <Link to='/register' className="text-[12px] font-[400] ">
+                Overview
+                </Link>
+          </div>
+
+          <div className="pb-[10px]">
+          <button className="text-[12px] font-[400] "
+                onClick={scrollToTimeline}
+                >
+                Timeline
+                </button>
+</div>
+
+<div className="pb-[10px]">
+<button onClick={scrollToFaqs} className="text-[12px] font-[400] ">
+                FAQs
+                </button>
+</div>
+
+<div className="pb-[20px]">
+<Link to='/register' className="text-[12px] font-[400] ">
                 Register
-                </Link> : <p className="text-[12px] font-[400] ">{link.name}</p>
-            }
-              
-            </div>
-          ))}
+                </Link>
+</div>
+
 
           <div className="flex flex-row items-center justify-between w-full">
             <p className="text-[#D434FE] text-[12px] pr-[10px]">Follow us</p>
@@ -99,12 +143,12 @@ const Footer = () => {
 
           <div className="flex flex-row items-center pb-[20px]">
             <img src={Phone} className="w-[13px] mr-[15px]"   />
-            <p className="text-[12px] font-[400]">+234 6707653444</p>
+            <a className="text-[12px] font-[400]" href="tel:+2346707653444">+234 6707653444</a>
           </div>
 
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-start">
             <img src={Location} className="w-[13px] mr-[15px]"   />
-            <p className="text-[12px] font-[400] w-[89px]">
+            <p className="text-[12px] font-[400] w-[89px] mt-[-2px]">
               27,Alara Street Yaba 100012 Lagos State
             </p>
           </div>

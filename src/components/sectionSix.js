@@ -53,7 +53,7 @@ const SectionSix = () => {
         </p>
 
         <section>
-          <div className="flex flex-col items-center justify-center xl:pt-[80px] pt-[30px] pl-[20px]">
+          <div className="flex flex-col items-center justify-center xl:pt-[20px] pt-[30px] pl-[20px]">
             <img
               src={darkPurpleStar}
               className="self-start blinking ml-[30px] mb-[20px] xl:w-[30px] w-[14px]"

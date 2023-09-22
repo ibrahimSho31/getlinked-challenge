@@ -10,7 +10,7 @@ import {
   GreyStar,
   topPurple,
 } from "./assets";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Landing.css";
 import { useEffect, useState } from "react";
 const SectionOne = () => {
@@ -156,16 +156,13 @@ const SectionOne = () => {
               a Big prize
             </p>
 
-            <NavLink
-              to="/register"
-              className={({ isActive }) =>
-                isActive
-                  ? "flex flex-col w-[172px] h-[53px] mt-[40px] mb-[0px] bodyWrap text-white rounded-[8px] justify-center items-center font-[900] "
-                  : " w-[172px] h-[53px] headerBtn mt-[40px] mb-[0px] flex flex-row items-center justify-center transition duration-300 ease-in-out rounded-[8px] "
-              }
-            >
-              <button className=" ">Register</button>
-            </NavLink>
+            <Link
+                  to="/register"
+                  className="headerBtn xl:self-start w-[152px] z-40 montserrat
+                    xl:w-[172px] h-[46px] xl:h-[53px] my-[30px] xl:text-[16px] text-[14px] flex flex-row items-center justify-center"
+                >
+                  Register
+                </Link>
 
             <img
               src={GreyStar}

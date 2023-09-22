@@ -62,7 +62,7 @@ const SectionNine = () => {
         px-[30px] flex flex-col xl:flex-row items-center xl:items-start justify-between montserrat xl:px-[130px] py-[50px]
         "
     >
-      <section className="text-center xl:text-left" ref={slidingDiv4Ref}>
+      <section className="text-center xl:text-left" ref={slidingDiv4Ref} id="privacyPolicy">
         <img
           src={GreyStar}
           className="w-[15px] mt-[-20px] ml-[70%] xl:w-[30px] absolute xl:ml-[330px] blinking"
@@ -138,10 +138,10 @@ const SectionNine = () => {
 
           <Link
                   to="/register"
-                  className="headerBtn self-center w-[122px] z-40
+                  className="headerBtn self-center w-[122px] z-40 montserrat
                     xl:w-[172px] h-[40px] xl:h-[53px] my-[30px] text-[12px] flex flex-row items-center justify-center"
                 >
-                  <button className=" ">Read More</button>
+                  Read More
                 </Link>
         </section>
       </section>
@@ -151,7 +151,7 @@ const SectionNine = () => {
         className="w-[10px] hidden xl:block absolute xl:ml-[75%] xl:mt-[150px] blinking"
          
       />
-      <section className="flex flex-col items-center justify-center xl:ml-[-100px] xl:mt-[-200px] mt-[-100px]">
+      <section className="flex flex-col items-center justify-center xl:ml-[-100px] xl:mt-[-200px] mt-[-40px]">
         <img
           src={lock}
           className="absolute   z-10 xl:ml-[70px] w-[249px] xl:w-[530px]"
