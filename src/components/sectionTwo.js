@@ -1,6 +1,40 @@
 import { purpleStar, arrow, thinkBig, darkPurpleStar } from "./assets";
+import { useEffect, useRef } from "react";
 import styles from "./Landing.css";
 const SectionTwo = () => {
+  const sectwoRef = useRef(null); 
+  const sectwoDivRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries?.forEach((entry) => {
+          if (entry.isIntersecting) {
+            
+            sectwoRef.current.style.opacity = 1;
+            sectwoRef.current.classList.add("slidein-r")
+            sectwoDivRef.current.classList.add("slide-in-l"); 
+          } else {
+            
+            sectwoRef.current.style.opacity = 0;
+            
+          }
+        });
+      },
+      { threshold: 0.2 } 
+    );
+
+    const sectwoElement = sectwoRef.current;
+
+    if (sectwoElement) {
+      observer.observe(sectwoElement);
+  
+      return () => {
+        observer.unobserve(sectwoElement);
+      };
+    }
+  }, []); 
+
   return (
     <>
       <section
@@ -15,8 +49,8 @@ const SectionTwo = () => {
           />
           <img
             src={thinkBig}
-            className="w-[490px] min-w-[264px] z-20"
-             
+            className="w-[490px] min-w-[264px] z-20 floating-image"
+            ref={sectwoRef}
           />
           <img
             src={arrow}
@@ -26,7 +60,7 @@ const SectionTwo = () => {
         </div>
         <img src={arrow} className="w-[25px] flex xl:hidden"   />
 
-        <div className="flex flex-col items-center pt-[20px] xl:pt-[0px]">
+        <div className="flex flex-col items-center pt-[20px] xl:pt-[0px]" ref={sectwoDivRef}>
           <div
             className="clashDisplay text-[25px] xl:text-[32px] flex w-full
            flex-row items-center justify-center xl:justify-between"

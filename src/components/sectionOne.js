@@ -131,7 +131,7 @@ const SectionOne = () => {
         </section>
 
         <section className="flex flex-col xl:flex-row items-center justify-between metrixBg">
-          <div className="flex flex-col items-center xl:items-start w-full xl:w-[50%] text-center xl:text-left z-[30] ">
+          <div className="flex flex-col items-center xl:items-start w-full xl:w-[50%] text-center xl:text-left z-[30] slide-in-r">
             <img
               src={Creative}
               className="absolute w-[18px] xl:w-[53px] xl:mt-[-50px] xl:ml-[450px] ml-[180px] mt-[-20px]"

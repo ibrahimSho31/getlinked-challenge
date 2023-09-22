@@ -9,11 +9,28 @@ import {
   Star,
 } from "./assets";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SectionFour = () => {
   const secfourRef = useRef(null); 
   const slidingDiv2Ref = useRef(null);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = Purp2;
+
+    image.onload = () => {
+      // Set the state to indicate that the image has loaded
+      setImageLoaded(true);
+    };
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      image.onload = null;
+    };
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,7 +39,10 @@ const SectionFour = () => {
           if (entry.isIntersecting) {
             
             secfourRef.current.style.opacity = 1;
-            slidingDiv2Ref.current.classList.add("slide-in-l");
+            
+              slidingDiv2Ref.current.classList.add("slide-in-l");
+            
+            
           } else {
             
             secfourRef.current.style.opacity = 0;
@@ -80,8 +100,8 @@ const SectionFour = () => {
     <>
       <section
         className="flex flex-col xl:flex-row items-center xl:items-end z-[40] 
-      justify-between xl:px-[100px] pt-[10px] xl:pt-[50px] xl:pb-[180px] pb-[50px] 
-  px-[20px] text-center xl:text-left border-[1px] 
+      justify-center xl:justify-between xl:px-[100px] pt-[10px] xl:pt-[50px] xl:pb-[180px] pb-[50px] 
+  px-[20px] text-center xl:text-left border-[1px] w-[100%]
   border-solid border-[#ffffff2e] border-x-[0px] border-t-[0px]"
       >
         <div className="flex flex-col items-center justify-center  xl:w-[900px]">
@@ -122,6 +142,7 @@ const SectionFour = () => {
           <div
             className="clashDisplay text-[25px] xl:text-[32px] flex w-full
            flex-row items-center justify-center xl:justify-between"
+           
           >
             <h1 className="xl:w-[398px] z-40 clashDisplayBig w-full pb-[15px]">
               Judging Criteria
@@ -131,6 +152,7 @@ const SectionFour = () => {
           </div>
           {attributes.map((attribute, id) => (
             <div
+             
               key={id}
               className=" montserrat z-40 text-[13px] w-[90%] xl:w-full xl:text-[15px] leading-[27px] pb-[10px]"
             >
@@ -142,6 +164,7 @@ const SectionFour = () => {
           ))}
 
           <Link
+           
                   to="/register"
                   className="headerBtn xl:self-start w-[122px] z-40 montserrat
                     xl:w-[172px] h-[40px] xl:h-[53px] my-[30px] text-[12px] flex flex-row items-center justify-center"
@@ -149,11 +172,12 @@ const SectionFour = () => {
                   Read More
                 </Link>
 
-          <img
-            src={Purp2}
-            className="absolute overImg ml-[100px] z-10 mt-[600px] xl:mt-[400px] w-[250px] xl:w-[500px]"
-             
-          />
+      {imageLoaded && (
+        <img
+          src={Purp2}
+          className="absolute overImg ml-[100px] z-10 mt-[600px] xl:mt-[400px] w-[250px] xl:w-[500px]"
+        />
+      )}
         </div>
       </section>
     </>

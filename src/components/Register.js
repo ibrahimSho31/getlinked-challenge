@@ -91,6 +91,24 @@ const Register = () => {
     );
   };
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = Sitting;
+
+    image.onload = () => {
+      // Set the state to indicate that the image has loaded
+      setImageLoaded(true);
+    };
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      image.onload = null;
+    };
+  }, []);
+
+
   return (
     <>
       {loading ? (
@@ -109,7 +127,9 @@ const Register = () => {
               className="montserrat flex flex-col xl:flex-row items-center xl:items-start z-40
              text-left xl:px-[150px] px-[20px] xl:justify-between xl:pt-[30px] pb-[50px]"
             >
-<img src={Sitting} className="w-[195px] xl:w-[700px] z-40 " />
+              {imageLoaded && (
+              <img src={Sitting} className="w-[195px] xl:w-[700px] z-40 slide-in-r " />
+              )}
 <img src={Walking} className="h-[30px]" />
               <section className="flex flex-col">
 
@@ -147,7 +167,9 @@ const Register = () => {
                 src={purpleStar}
                 className="w-[30px] blinking hidden xl:block mb-[50px]"
               />
+              {imageLoaded && (
               <img src={Sitting} className="w-[195px] xl:w-[700px] z-40 slide-in-r " />
+              )}
             </section>
 
             <img
