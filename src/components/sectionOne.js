@@ -172,7 +172,7 @@ const SectionOne = () => {
 
             <img
               src={GreyStar}
-              className="xl:flex hidden mt-[30px] ml-[450px] blinking"
+              className="xl:flex hidden mt-[30px] ml-[450px] blinking " 
                
             />
 
