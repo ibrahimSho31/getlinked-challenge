@@ -281,6 +281,7 @@ const Register = () => {
                         onChange={(e) => {
                           setCategory(e.target.value);
                         }}
+      required                  
                         style={{
     // Hide the default arrow
     appearance: 'none',
@@ -321,6 +322,7 @@ const Register = () => {
     backgroundPosition: 'right 10px center', // Position the custom arrow on the right side
     backgroundSize: '10px', // Adjust the size of the custom arrow
   }}
+  required
                       >
                         <option value="">Select</option>
                         <option value="1">1</option>
@@ -366,6 +368,7 @@ const Register = () => {
                     <button
                       className="headerBtn w-[179px] xl:w-full h-[53px]"
                       type="submit"
+                      
                     >
                       <h1 className="xl:block hidden">Register Now</h1>{" "}
                       <h1 className="xl:hidden block">Submit</h1>

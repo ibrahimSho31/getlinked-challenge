@@ -34,17 +34,16 @@ const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
-  const [number, setNumber] = useState("");
 
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
   useEffect(() => {
-    console.log(errorMessage);
+    // console.log(errorMessage);
   }, [errorMessage]);
 
   useEffect(() => {
-    console.log(successMessage);
+    // console.log(successMessage);
   }, [successMessage]);
 
   const handleContactUs = async (e) => {
@@ -53,7 +52,6 @@ const Contact = () => {
     mutate(
       {
         email: mail,
-        phoneNumber: number,
         message: message,
         firstName: firstName,
       },
@@ -293,24 +291,6 @@ const Contact = () => {
                       required
                     />
 
-                    <input
-                                              onChange={(e) => {
-                          let inputValue = e.target.value;
-
-                          inputValue = inputValue.replace(/[^0-9]/g, "");
-
-                          if (inputValue.length > 13) {
-                            inputValue = inputValue.slice(0, 13);
-                          }
-
-                          setNumber(inputValue);
-                        }}
-                      value={number}
-                      placeholder="Phone Number"
-                      type="text"
-                      className="h-[47px] mb-[20px] rounded-[4px] border-[1px] border-[solid] border-[#FFFFFF] bg-transparent px-[20px]"
-                      required
-                    />
 
                     <textarea
                       onChange={(e) => setMessage(e.target.value)}
