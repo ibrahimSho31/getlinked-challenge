@@ -10,6 +10,14 @@ import {
   Star,
 } from "./assets";
 import { useEffect, useRef } from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box
+} from '@chakra-ui/react'
 
 const SectionFive = () => {
   const secfiveRef = useRef(null); 
@@ -79,13 +87,13 @@ const SectionFive = () => {
    border-[#ffffff2e] border-x-[0px] border-t-[0px]"
    id="faqs"
       >
-        <div className="z-[40] xl:px-[150px] mb-[100px] xl:mb-[0px]" ref={slidingDiv3Ref}>
+        <div className="z-[40] flex flex-col items-center justify-center xl:px-[150px] mb-[100px] xl:mb-[0px]" ref={slidingDiv3Ref}>
           <img
             src={darkPurpleStar}
             className="w-[15px] xl:w-[30px] xl:1-[30px] xl:ml-[-30px] xl:pb-[20px] blinking"
              
           />
-          <h1 className="clashDisplayBig xl:text-[32px] text-[20px] pb-[20px]">
+          <h1 className="clashDisplayBig xl:text-[32px] xl:self-start text-[20px] pb-[20px]">
             Frequently Ask <br />
             <span className="text-[#D434FE]">Question</span>
           </h1>
@@ -94,7 +102,7 @@ const SectionFive = () => {
             about <span className="font-[700]"> getlinked Hackathon 1.0</span>
           </p>
 
-          {questions.map((question, id) => (
+          {/* {questions.map((question, id) => (
             <div key={id}>
               <div className="flex flex-row items-center justify-between pb-[15px]">
                 <p className="montserrat text-[14px] text-left">
@@ -105,7 +113,31 @@ const SectionFive = () => {
 
               <hr className="bg-[#D434FE] w-full h-[2px] border-none mb-[30px]" />
             </div>
-          ))}
+          ))} */}
+
+          
+          <Accordion allowToggle >
+          {questions.map((question, id) => (
+  <AccordionItem key={id} className="w-[296px] xl:w-[500px]">
+    <h2>
+      <AccordionButton className="flex flex-row items-center justify-between pb-[15px]">
+        <Box as="span" flex='1' textAlign='left' className="montserrat text-[14px] text-left">
+        {question.question}
+        </Box>
+        <img src={plus}   />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4} className="montserrat text-[14px] text-left">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </AccordionPanel>
+    <hr className="bg-[#D434FE] w-full h-[2px] border-none mb-[30px]" />
+  </AccordionItem>
+  ))}
+</Accordion>
+
         </div>
 
         <div>

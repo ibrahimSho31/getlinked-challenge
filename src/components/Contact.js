@@ -16,12 +16,19 @@ import {
   topPurple,
 } from "./assets";
 import { useContact } from "./hooks/useContact";
+import { BarLoader } from "react-spinners";
+import { css } from '@emotion/react';
+const loadingSpinnerStyle = css`
+  margin-top: 20%;
+  
+`;
 
 const Contact = () => {
   const { mutate, isLoading, error } = useContact();
 
   const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
     // Simulate loading delay for demonstration purposes
     const delay = setTimeout(() => {
@@ -322,10 +329,19 @@ const Contact = () => {
                     />
 
                     <button
-                      className="headerBtn w-[172px] h-[53px]"
+                      className="headerBtn w-[172px] h-[53px] flex flex-row items-center justify-center"
                       type="submit"
                     >
-                      Submit
+
+                    {
+                      isLoading ? 
+                      
+                      <BarLoader css={loadingSpinnerStyle} color="white" loading={true} />
+                      
+                      
+                      : 'Submit'
+                    }
+                      
                     </button>
                   </div>
                 </form>

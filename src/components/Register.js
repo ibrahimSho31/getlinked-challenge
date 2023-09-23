@@ -16,12 +16,16 @@ import {
   SelectArrow,
   Congratulations
 } from "./assets";
-
+import { BarLoader } from "react-spinners";
+import { css } from '@emotion/react';
 import { useApplication } from "./hooks/useApplication";
 import CongratsDialog from "./congrats";
-
-// import { getCategory } from "./hooks/getCategory";
 import axios from "axios";
+const loadingSpinnerStyle = css`
+  margin-top: 20%;
+  
+`;
+
 const Register = () => {
   const { mutate, isLoading, error } = useApplication();
   const apiUrl = "https://backend.getlinked.ai/hackathon/categories-list";
@@ -302,15 +306,15 @@ const Register = () => {
                         }}
       required                  
                         style={{
-    // Hide the default arrow
+  
     appearance: 'none',
     '-webkit-appearance': 'none',
     '-moz-appearance': 'none',
     
     backgroundImage: `url(${SelectArrow})`,
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 10px center', // Position the custom arrow on the right side
-    backgroundSize: '10px', // Adjust the size of the custom arrow
+    backgroundPosition: 'right 10px center', 
+    backgroundSize: '10px',
   }}
                       >
                         <option>Select your category</option>
@@ -331,28 +335,28 @@ const Register = () => {
                         onChange={handleCategoryChange}
                         value={groupSize}
                         style={{
-    // Hide the default arrow
+  
     appearance: 'none',
     '-webkit-appearance': 'none',
     '-moz-appearance': 'none',
     
     backgroundImage: `url(${SelectArrow})`,
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 10px center', // Position the custom arrow on the right side
-    backgroundSize: '10px', // Adjust the size of the custom arrow
+    backgroundPosition: 'right 10px center',
+    backgroundSize: '10px'
   }}
   required
                       >
                         <option value="">Select</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">15</option>
+                        <option value="4">20</option>
+                        <option value="5">25</option>
+                        <option value="6">30</option>
+                        <option value="7">35</option>
+                        <option value="8">40</option>
+                        
                       </select>
                     </div>
                   </div>
@@ -385,12 +389,21 @@ const Register = () => {
 
                   <div className="flex flex-row items-center justify-center ">
                     <button
-                      className="headerBtn w-[179px] xl:w-full h-[53px]"
+                      className="headerBtn w-[179px] xl:w-full h-[53px] flex flex-row items-center justify-center"
                       type="submit"
                       
                     >
+                    {
+                      isLoading ? 
+                      
+                      <BarLoader css={loadingSpinnerStyle} color="white" loading={true} />
+                      
+                      : <div>
                       <h1 className="xl:block hidden">Register Now</h1>{" "}
                       <h1 className="xl:hidden block">Submit</h1>
+                      </div>
+                    }
+
                     </button>
                   </div>
                 </form>

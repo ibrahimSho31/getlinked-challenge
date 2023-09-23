@@ -81,10 +81,15 @@ const Header = () => {
         >
           <section className="fixed bg-[#150E28] px-[12px]  py-[12px] z-50 h-[100vh] w-full">
             <button
-              className="flex flex-row items-end justify-end w-full mt-[30px] pr-[50px]"
-              onClick={switcher}
+              className="flex flex-row  items-end justify-end w-full mt-[30px] pr-[50px]"
+              
             >
-              <img src={Close} className="w-[15px]"   />
+            
+            <img src="/images/close.png" className="w-[40px] " onClick={switcher}  />
+            
+            
+          
+              
             </button>
             <div className="flex z-50 flex-col items-start text-left pl-[30px] w-full">
               <div className="flex flex-col z-50 items-start ">
