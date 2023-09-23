@@ -39,6 +39,10 @@ background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, 
     filter: hue-rotate(0deg);
 }
 
+.inter{
+  font-family: Inter;
+}
+
 
 .globeBlend{
     background: url("./assets/svgs/globe.svg"), lightgray -0.113px -10.671px / 105.862% 104.281% no-repeat;
@@ -65,6 +69,10 @@ background-blend-mode: hard-light;
     src: url("/public/fonts/Unica_One/UnicaOne-Regular.ttf");
 }
 
+@font-face {
+  font-family: Inter;
+  src: url("/public/fonts/Inter/Inter-Medium.ttf");
+}
 
 @keyframes blink {
     0% {

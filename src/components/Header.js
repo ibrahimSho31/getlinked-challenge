@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <section
         className="flex flex-row items-center 
-         justify-between xl:px-[100px] px-[30px] montserrat pt-[35px] pb-[20px] text-[16px] font-normal "
+         justify-between xl:px-[100px] px-[30px] inter pt-[35px] pb-[20px] text-[16px] font-normal "
       >
         <div className="z-40">
           <NavLink to="/">
@@ -81,7 +81,7 @@ const Header = () => {
         >
           <section className="fixed bg-[#150E28] px-[12px]  py-[12px] z-50 h-[100vh] w-full">
             <button
-              className="flex flex-row  items-end justify-end w-full mt-[30px] pr-[50px]"
+              className="flex flex-row  items-end justify-end w-full mt-[30px] pr-[30px]"
               
             >
             
