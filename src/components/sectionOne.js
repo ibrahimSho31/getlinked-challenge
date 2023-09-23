@@ -107,13 +107,13 @@ const SectionOne = () => {
           />
 
           <h1
-            className="montserrat ovrTxt pt-[30px] xl:pt-[0px] pb-[30px] text-[16px] xl:w-full w-[330px] xl:text-[36px] 
+            className="montserrat ovrTxt pt-[30px] xl:pt-[0px] pb-[30px] text-[16px] xl:w-full w-[100%] xl:text-[36px] 
                     italic font-[700] flex flex-col xl:pr-[50px] justify-end xl:items-end items-center"
           >
               {displayText}
             <img
               src={purpleLine}
-              className="flex flex-row self-end justify-end xl:w-[253px] w-[115px] "
+              className="flex flex-row self-end justify-end xl:w-[253px] w-[115px] mr-[30px] xl:mr-[0px]"
                
             />
           </h1>
