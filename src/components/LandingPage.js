@@ -11,7 +11,7 @@ import SectionNine from "./sectionNine"
 import Footer from "./Footer"
 import LoadingSpinner from "./LoadingSpinner"
 import { useState, useEffect } from "react"
-import { Man, Globe, Fire, Chain, Creative } from "./assets"
+import { Man, Globe, Fire, Chain, Creative, Congratulations } from "./assets"
 const LandingPage = () => {
     const [loading, setLoading] = useState(true);
 
@@ -75,6 +75,10 @@ const LandingPage = () => {
                 filter: "hue-rotate(230deg)",
               }}
             />
+                          <img 
+                src={Congratulations}
+                className='w-[258px] xl:w-[427px]'
+              />
                 </section>
 
                 </>
