@@ -29,7 +29,7 @@ const SectionFive = () => {
           }
         });
       },
-      { threshold: 0.2 } 
+      { threshold: 0.1 } 
     );
 
     const secfiveElement = secfiveRef.current;
