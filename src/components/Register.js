@@ -13,7 +13,8 @@ import {
   StarOutline,
   Sitting,
   Walking,
-  SelectArrow
+  SelectArrow,
+  Congratulations
 } from "./assets";
 
 import { useApplication } from "./hooks/useApplication";
@@ -108,6 +109,21 @@ const Register = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const image2 = new Image();
+    image2.src = Congratulations;
+
+    image2.onload = () => {
+      // Set the state to indicate that the image has loaded
+      setImageLoaded(true);
+    };
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      image2.onload = null;
+    };
+  }, []);
+
 
   return (
     <>
@@ -117,7 +133,10 @@ const Register = () => {
 
           <section className="hidden">
             
-
+          <img 
+                src={Congratulations}
+                className='w-[258px] xl:w-[427px]'
+              />
             
             <img
               src={topPurple}
